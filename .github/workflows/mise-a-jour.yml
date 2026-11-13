@@ -1,0 +1,49 @@
+name: Mise à jour mensuelle des journées
+
+on:
+  schedule:
+    - cron: "0 5 1 * *"   # le 1er de chaque mois à 5 h UTC (6 h ou 7 h en Suisse)
+  workflow_dispatch:       # bouton « Run workflow » pour lancer un essai à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+jobs:
+  mise-a-jour:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Récupérer et fusionner les journées
+        id: maj
+        continue-on-error: true
+        run: node outils/mise-a-jour.js
+
+      - name: Régénérer les calendriers .ics
+        if: steps.maj.outcome == 'success'
+        run: node outils/generer-ics.js
+
+      - name: Enregistrer dans le dépôt
+        run: |
+          git config user.name "MondialDay (mise à jour automatique)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add journees-auto.js calendrier.ics officielles.ics
+          if git diff --cached --quiet; then echo "Rien à enregistrer"; exit 0; fi
+          if [ "${{ steps.maj.outcome }}" = "success" ]; then MSG="Mise à jour automatique des journées ($(date +%Y-%m-%d))"; else MSG="Tentative de mise à jour échouée ($(date +%Y-%m-%d))"; fi
+          git commit -m "$MSG"
+          git push
+
+      - name: Signaler un échec
+        if: steps.maj.outcome == 'failure'
+        run: |
+          echo "La source n'a pas pu être récupérée ou lue : les données précédentes sont conservées."
+          exit 1

@@ -60,7 +60,6 @@ svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke
 
 .prochains{margin-top:26px}
 .prochains h2{margin:0 0 8px;font-size:1.05rem;font-weight:750}
-.prochains .reste{margin:6px 0 0;font-size:.9rem;color:var(--doux)}
 .prochains ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 .prochains li{display:grid;grid-template-columns:6.6rem 10px 1fr;gap:10px;align-items:baseline;padding:4px 0;font-size:.95rem}
 .prochains time{color:var(--doux);white-space:nowrap}
@@ -88,8 +87,6 @@ svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .inter input:checked{background:var(--accent)}
 .inter input:checked::after{transform:translateX(18px)}
 select{min-height:38px;border-radius:10px;border:1px solid var(--trait-fort);background:var(--surface);padding:4px 10px}
-.annee{display:inline-flex;align-items:center;gap:2px;margin-left:auto}
-.annee strong{min-width:3.2rem;text-align:center;font-weight:750}
 .ico{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--doux);cursor:pointer;text-decoration:none}
 .ico:hover{background:var(--trait);color:var(--texte)}
 .actions{display:flex;flex-wrap:wrap;gap:10px}
@@ -98,11 +95,28 @@ select{min-height:38px;border-radius:10px;border:1px solid var(--trait-fort);bac
 .btn.primaire{background:var(--accent);color:var(--sur-accent);border-color:var(--accent)}
 .btn.primaire:hover{filter:brightness(1.08)}
 
-/* Liste */
-.mois{margin-top:30px}
-.mois h2{position:sticky;top:0;z-index:2;margin:0;padding:10px 0 8px;background:var(--fond);font-size:1.4rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:10px}
-.mois h2 span{font-size:.9rem;font-weight:500;color:var(--doux)}
-.liste{list-style:none;margin:0;padding:0}
+/* Bandeau de récupération */
+.recup{margin:0;padding:8px 14px;border-radius:var(--rayon);background:var(--surface);border:1px solid var(--trait);font-size:.9rem;color:var(--doux);display:flex;gap:8px;align-items:flex-start}
+.recup strong{color:var(--texte);font-weight:650}
+.recup svg.i{width:18px;height:18px;margin-top:2px}
+
+/* Liste par année et par mois */
+.an{margin-top:34px}
+.an > h2{margin:0 0 6px;font-size:2rem;font-weight:800;letter-spacing:-.02em}
+.mois{border-top:1px dashed var(--trait-fort)}
+.mois:last-child{border-bottom:1px dashed var(--trait-fort)}
+.mois > summary{list-style:none;display:flex;align-items:center;gap:12px;min-height:54px;padding:8px 4px;cursor:pointer;font-size:1.2rem;font-weight:750}
+.mois > summary::-webkit-details-marker{display:none}
+.mois > summary:hover .chev{background:var(--trait)}
+.mois[open] > summary{position:sticky;top:0;z-index:2;background:var(--fond)}
+.mois .nb{font-size:.9rem;font-weight:500;color:var(--doux)}
+.mois .pts{display:inline-flex;gap:3px;margin-left:auto}
+.mois .pts span{width:8px;height:8px;border-radius:50%;background:var(--plein)}
+.chev{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;color:var(--doux);flex:none;transition:transform .2s}
+.mois[open] .chev{transform:rotate(180deg)}
+.mois.courant > summary::after{content:"ce mois-ci";order:2;font-size:.78rem;font-weight:600;padding:1px 9px;border-radius:var(--pastille);background:var(--e-bg);color:var(--e-tx)}
+.mois .pts{order:3}.mois .chev{order:4}
+.liste{list-style:none;margin:0 0 10px;padding:0}
 .j{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:12px 0;border-top:1px dashed var(--trait-fort)}
 .j:first-child{border-top:0}
 .puce{width:46px;min-height:46px;border-radius:12px;display:grid;place-items:center;align-content:center;color:#fff;background:var(--plein);line-height:1.05;text-align:center;padding:4px 2px}
@@ -146,7 +160,6 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 .toast{white-space:nowrap;position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--texte);color:var(--fond);padding:10px 18px;border-radius:var(--pastille);font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.vu{opacity:1}
 @media (max-width:520px){
-  .annee{margin-left:0}
   .j{gap:12px}
   .prochains li{grid-template-columns:6.2rem 10px 1fr}
 }
@@ -154,6 +167,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 </head>
 <body>
 <div class="page">
+  <p class="recup" id="recup"></p>
   <header class="hero">
     <h1 class="marque"><span class="points" aria-hidden="true"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span></span><span id="nomSite">MondialDay</span> <small id="titreSite">Chaque jour sa journée</small></h1>
     <div id="hero"></div>
@@ -166,7 +180,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
       <div class="ligne">
         <label class="inter"><input type="checkbox" id="offic"> Officielles seulement</label>
         <label><span class="sr">Mois</span><select id="mois"></select></label>
-        <div class="annee"><button class="ico" id="anPrec" aria-label="Année précédente"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><strong id="an" aria-live="polite"></strong><button class="ico" id="anSuiv" aria-label="Année suivante"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div>
+        <button class="btn" id="btnTout" type="button">Tout développer</button>
       </div>
       <div class="actions">
         <button class="btn primaire" id="btnExport"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg><span id="txtExport">Exporter la sélection</span></button>
@@ -179,7 +193,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 
   <footer>
     <p>Liste établie d’après les journées proclamées par les Nations Unies et ses agences, les institutions européennes, la France et la Suisse, complétée de journées populaires. Certaines dates, fixées chaque année par leurs organisateurs, peuvent varier : vérifiez auprès de l’organisme. Pour aller plus loin : <a href="https://www.un.org/fr/observances/list-days-weeks" target="_blank" rel="noopener">liste de l’ONU</a> · <a href="https://fr.wikipedia.org/wiki/Journ%C3%A9e_internationale" target="_blank" rel="noopener">Wikipédia</a>.</p>
-    <p><span id="piedNom">MondialDay</span> · version <span id="numVersion">1.0</span> · <button class="lien" id="btnNouv">nouveautés</button></p>
+    <p><span id="piedNom">MondialDay</span> · version <span id="numVersion">1.1</span> · <button class="lien" id="btnNouv">nouveautés</button></p>
   </footer>
 </div>
 
@@ -209,9 +223,10 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 
 <div class="toast" id="toast" role="status"></div>
 
-<script src="config.js?v=1.0"></script>
-<script src="journees.js?v=1.0"></script>
-<script src="nouveautes.js?v=1.0"></script>
+<script src="config.js?v=1.1"></script>
+<script src="journees.js?v=1.1"></script>
+<script src="journees-auto.js"></script>
+<script src="nouveautes.js?v=1.1"></script>
 
 <!-- Moteur de dates et d'export .ics (sans accès à la page : réutilisé par outils/generer-ics.js) -->
 <script id="moteur">
@@ -314,15 +329,30 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     return l.map(plie).join("\r\n") + "\r\n";
   }
 
-  racine.MD = { TYPES: TYPES, occurrence: occurrence, rrule: rrule, ics: ics, utc: utc, ajoute: ajoute };
+  // Clé de comparaison d'un nom (sans accents, ni ponctuation, ni majuscules)
+  function cle(nom) { return String(nom).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim(); }
+
+  // Liste de base + données récupérées automatiquement (journees-auto.js) :
+  // les corrections remplacent la date d'une journée de base, les ajouts viennent en plus.
+  function fusion(base, auto) {
+    if (!auto) return base.slice();
+    var corr = auto.corrections || {};
+    var liste = base.map(function (j) { var c = corr[cle(j[1])]; return c ? [c].concat(j.slice(1)) : j; });
+    var vus = {}; liste.forEach(function (j) { vus[cle(j[1])] = 1; });
+    (auto.ajouts || []).forEach(function (j) { if (!vus[cle(j[1])]) { vus[cle(j[1])] = 1; liste.push(j); } });
+    return liste;
+  }
+
+  racine.MD = { TYPES: TYPES, occurrence: occurrence, rrule: rrule, ics: ics, utc: utc, ajoute: ajoute, cle: cle, fusion: fusion, lire: lire };
 })(typeof window !== "undefined" ? window : globalThis);
 </script>
 
 <script>
 (function () {
   "use strict";
-  var C = window.CONFIG, J = window.JOURNEES, MD = window.MD, T = MD.TYPES;
-  var VERSION = "1.0";
+  var C = window.CONFIG, MD = window.MD, T = MD.TYPES, AUTO = window.JOURNEES_AUTO || null;
+  var J = MD.fusion(window.JOURNEES, AUTO);
+  var VERSION = "1.1";
   var MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   var MOIS_C = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
   var ORDRE = ["M","I","E","FR","CH"];
@@ -330,25 +360,35 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   var ICO_CAL = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4M12 13v5m-2.5-2.5h5"/></svg>';
   var ICO_INFO = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>';
   var ICO_OK = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
+  var ICO_CHEV = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+  var ICO_MAJ = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg>';
   var $ = function (s) { return document.querySelector(s); };
+  var maj = function (t) { return t.replace(/^./, function (c) { return c.toUpperCase(); }); };
 
   var maintenant = new Date();
   var auj = MD.utc(maintenant.getFullYear(), maintenant.getMonth() + 1, maintenant.getDate());
-  var etat = { an: auj.getUTCFullYear(), q: "", types: { M: 1, I: 1, E: 1, FR: 1, CH: 1 }, offic: false, mois: "tous" };
+  var AN0 = auj.getUTCFullYear(), NB_ANS = Math.max(1, C.anneesAffichees || 2);
+  var etat = { q: "", types: { M: 1, I: 1, E: 1, FR: 1, CH: 1 }, offic: false, mois: "tous", ouverts: {} };
 
   function esc(t) { return String(t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " "); }
-  var fmtLong = new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
-  var fmtCourt = new Intl.DateTimeFormat("fr-FR", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+  // « 1er » pour le premier jour du mois, comme on l'écrit en français
+  function premier(f) { return { format: function (d) { return f.format(d).replace(/(^|\s)1(\s)/, "$11er$2"); } }; }
+  var fmtLong = premier(new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }));
+  var fmtCourt = premier(new Intl.DateTimeFormat("fr-FR", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" }));
+  var fmtJour = premier(new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }));
   function iso(d) { return d.toISOString().slice(0, 10); }
+  function dateIso(t) { var p = String(t).split("-"); return MD.utc(+p[0], +p[1], +p[2]); }
 
   function occurrences(an) {
     return J.map(function (j, i) {
       var o = MD.occurrence(j[0], an);
-      return { i: i, j: j, debut: o.debut, fin: o.fin, dur: o.dur, recherche: norm(j[1] + " " + j[4] + " " + T[j[2]]) };
+      return { i: i, j: j, an: an, debut: o.debut, fin: o.fin, dur: o.dur, recherche: norm(j[1] + " " + j[4] + " " + T[j[2]]) };
     }).sort(function (a, b) { return a.debut - b.debut || b.j[3] - a.j[3] || a.j[1].localeCompare(b.j[1], "fr"); });
   }
   function couvre(o, d) { return d >= o.debut && d <= o.fin; }
+  var CACHE = {};
+  function occ(an) { return CACHE[an] || (CACHE[an] = occurrences(an)); }
 
   function pastilles(j) {
     return '<span class="pas t-' + j[2] + '">' + esc(T[j[2]]) + '</span>' +
@@ -357,9 +397,24 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   }
   function boutonAjout(i, nom) { return '<button class="ico" data-ajout="' + i + '" aria-label="Ajouter « ' + esc(nom) + ' » à mon agenda" title="Ajouter à mon agenda">' + ICO_CAL + '</button>'; }
 
+  /* Bandeau : date de la dernière récupération réussie */
+  function rendreRecup() {
+    var d = AUTO && AUTO.derniereRecuperation;
+    var h = ICO_MAJ + "<span>";
+    if (d) {
+      h += "Dernière récupération des informations : <strong>" + esc(fmtJour.format(dateIso(d))) + "</strong>";
+      if (AUTO.source) h += " <span class=\"sr\">(source : " + esc(AUTO.source) + ")</span>";
+    } else {
+      var prochaine = MD.utc(auj.getUTCFullYear(), auj.getUTCMonth() + 2, 1);
+      h += "Dernière récupération des informations : <strong>aucune pour l’instant</strong>. Liste initiale établie le " + esc(fmtJour.format(dateIso(C.dateListeInitiale))) +
+        " ; première récupération automatique prévue le " + esc(fmtJour.format(prochaine)) + ".";
+    }
+    $("#recup").innerHTML = h + "</span>";
+  }
+
   /* En-tête : aujourd'hui et prochains jours */
   function rendreHero() {
-    var tous = occurrences(auj.getUTCFullYear()).concat(occurrences(auj.getUTCFullYear() + 1));
+    var tous = occ(AN0).concat(occ(AN0 + 1));
     var duJour = tous.filter(function (o) { return couvre(o, auj); });
     var mots = fmtLong.format(auj).split(" "), dernier = mots.pop();
     var h = '<p class="grande-date"><span class="sr">Aujourd’hui, </span>' + esc(mots.join(" ")) + ' <span style="white-space:nowrap">' + esc(dernier) + confettis() + '</span></p>';
@@ -371,22 +426,21 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
       var proch = tous.find(function (o) { return o.debut > auj; });
       h += '<p class="vide-jour">Aucune journée particulière aujourd’hui.' + (proch ? ' La prochaine : ' + esc(proch.j[1]) + ', ' + esc(fmtLong.format(proch.debut)) + '.' : '') + '</p>';
     }
-    h += '<a class="lien-liste" href="#mois-' + (auj.getUTCMonth() + 1) + '" id="versMois">Voir ' + MOIS[auj.getUTCMonth()] + ' dans la liste</a>';
-    var limite = MD.ajoute(auj, C.joursAVenir);
-    var vus = {};
+    h += '<a class="lien-liste" href="#m-' + AN0 + '-' + (auj.getUTCMonth() + 1) + '" id="versMois">Voir ' + MOIS[auj.getUTCMonth()] + ' dans la liste</a>';
+    var jours = C.joursAVenir || 14, limite = MD.ajoute(auj, jours), vus = {};
     var suite = tous.filter(function (o) { if (o.debut > auj && o.debut <= limite && !vus[o.i]) { vus[o.i] = 1; return true; } return false; });
-    var reste = Math.max(0, suite.length - 8); suite = suite.slice(0, 8);
-    if (suite.length) {
-      h += '<section class="prochains" aria-labelledby="tProch"><h2 id="tProch">Ces prochains jours</h2><ol>' + suite.map(function (o) {
-        return '<li><time datetime="' + iso(o.debut) + '">' + esc(fmtCourt.format(o.debut)) + '</time><span class="pt t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><span>' + esc(o.j[1]) + '</span></li>';
-      }).join("") + '</ol>' + (reste ? '<p class="reste">Et ' + reste + (reste > 1 ? " autres" : " autre") + ' dans la liste.</p>' : "") + '</section>';
-    }
-    $("#hero").innerHTML = h;
+    h += '<section class="prochains" aria-labelledby="tProch"><h2 id="tProch">Les ' + jours + ' prochains jours</h2>';
+    h += suite.length ? '<ol>' + suite.map(function (o) {
+      return '<li><time datetime="' + iso(o.debut) + '">' + esc(fmtCourt.format(o.debut)) + '</time><span class="pt t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><span>' + esc(o.j[1]) + '</span></li>';
+    }).join("") + '</ol>' : '<p class="vide-jour">Aucune journée dans cette période.</p>';
+    $("#hero").innerHTML = h + '</section>';
     $("#versMois").addEventListener("click", function (e) {
       e.preventDefault();
-      if (etat.an !== auj.getUTCFullYear() || etat.mois !== "tous") { etat.an = auj.getUTCFullYear(); etat.mois = "tous"; $("#mois").value = "tous"; rendreListe(); }
-      var cible = document.getElementById("mois-" + (auj.getUTCMonth() + 1));
-      if (cible) cible.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      var id = "m-" + AN0 + "-" + (auj.getUTCMonth() + 1);
+      if (etat.mois !== "tous" || !document.getElementById(id)) { reinitialiser(); }
+      etat.ouverts[id] = true;
+      var d = document.getElementById(id);
+      if (d) { d.open = true; d.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); d.querySelector("summary").focus({ preventScroll: true }); }
     });
   }
   function confettis() {
@@ -396,49 +450,85 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     }).join("") + '</span>';
   }
 
-  /* Liste filtrée */
-  function selection() {
-    var q = norm(etat.q.trim());
-    return occurrences(etat.an).filter(function (o) {
-      if (!etat.types[o.j[2]]) return false;
-      if (etat.offic && !o.j[3]) return false;
-      if (etat.mois !== "tous" && o.debut.getUTCMonth() + 1 !== +etat.mois) return false;
-      if (q && q.split(/\s+/).some(function (m) { return o.recherche.indexOf(m) < 0; })) return false;
-      return true;
-    });
+  /* Liste filtrée sur l'année en cours et les suivantes */
+  function filtre(o, q) {
+    if (!etat.types[o.j[2]]) return false;
+    if (etat.offic && !o.j[3]) return false;
+    if (etat.mois !== "tous" && o.debut.getUTCMonth() + 1 !== +etat.mois) return false;
+    if (q && q.split(/\s+/).some(function (m) { return o.recherche.indexOf(m) < 0; })) return false;
+    return true;
   }
+  function selectionParAn() {
+    var q = norm(etat.q.trim()), r = [];
+    for (var a = AN0; a < AN0 + NB_ANS; a++) r.push({ an: a, liste: occ(a).filter(function (o) { return filtre(o, q); }) });
+    return r;
+  }
+  function selection() { // journées distinctes (pour l'export)
+    var vus = {}, r = [];
+    selectionParAn().forEach(function (g) { g.liste.forEach(function (o) { if (!vus[o.i]) { vus[o.i] = 1; r.push(o); } }); });
+    return r;
+  }
+  function filtreActif() { return !!etat.q.trim() || etat.mois !== "tous"; }
+
+  function ligne(o) {
+    var j = o.j, jour = o.debut.getUTCDate(), plage = o.dur > 1 ? jour + "–" + o.fin.getUTCDate() : jour;
+    var wiki = "https://fr.wikipedia.org/w/index.php?search=" + encodeURIComponent(j[1]);
+    return '<li class="j t-' + j[2] + (couvre(o, auj) ? " aujourdhui" : "") + '"><time class="puce" datetime="' + iso(o.debut) + '"><b>' + plage + '</b><small>' + MOIS_C[o.debut.getUTCMonth()] + '</small></time>' +
+      '<div><h4 class="nom">' + esc(j[1]) + '</h4><span class="sr">' + esc(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + esc(fmtLong.format(o.fin)) : "") + " " + o.an + '</span><p class="meta">' + pastilles(j) + '</p></div>' +
+      '<div class="act"><a class="ico" href="' + wiki + '" target="_blank" rel="noopener" aria-label="En savoir plus sur « ' + esc(j[1]) + ' » (Wikipédia)" title="En savoir plus">' + ICO_INFO + '</a>' + boutonAjout(o.i, j[1]) + '</div></li>';
+  }
+
   function rendreListe() {
-    $("#an").textContent = etat.an;
-    var sel = selection();
-    $("#txtExport").textContent = "Exporter la sélection (" + sel.length + ")";
-    $("#btnExport").disabled = false;
-    if (!sel.length) {
+    var parAn = selectionParAn(), total = selection().length;
+    $("#txtExport").textContent = "Exporter la sélection (" + total + ")";
+    if (!total) {
       $("#liste").innerHTML = '<div class="vide"><p>Aucune journée ne correspond à ces filtres.</p><button class="btn" id="raz">Réinitialiser les filtres</button></div>';
       $("#raz").addEventListener("click", reinitialiser);
-      return;
+      majBoutonTout(); return;
     }
-    var groupes = {};
-    sel.forEach(function (o) { var m = o.debut.getUTCMonth() + 1; (groupes[m] = groupes[m] || []).push(o); });
-    $("#liste").innerHTML = Object.keys(groupes).map(function (m) {
-      var g = groupes[m];
-      return '<section class="mois" id="mois-' + m + '" aria-labelledby="h-mois-' + m + '"><h2 id="h-mois-' + m + '">' + MOIS[m - 1].replace(/^./, function (c) { return c.toUpperCase(); }) + ' ' + etat.an + ' <span>' + g.length + (g.length > 1 ? " journées" : " journée") + '</span></h2><ul class="liste">' +
-        g.map(function (o) {
-          var j = o.j, jour = o.debut.getUTCDate(), plage = o.dur > 1 ? jour + "–" + o.fin.getUTCDate() : jour;
-          var classe = "j t-" + j[2] + (couvre(o, auj) ? " aujourdhui" : "");
-          var wiki = "https://fr.wikipedia.org/w/index.php?search=" + encodeURIComponent(j[1]);
-          return '<li class="' + classe + '"><time class="puce" datetime="' + iso(o.debut) + '"><b>' + plage + '</b><small>' + MOIS_C[o.debut.getUTCMonth()] + '</small></time>' +
-            '<div><h3 class="nom">' + esc(j[1]) + '</h3><span class="sr">' + esc(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + esc(fmtLong.format(o.fin)) : "") + '</span><p class="meta">' + pastilles(j) + '</p></div>' +
-            '<div class="act"><a class="ico" href="' + wiki + '" target="_blank" rel="noopener" aria-label="En savoir plus sur « ' + esc(j[1]) + ' » (Wikipédia)" title="En savoir plus">' + ICO_INFO + '</a>' + boutonAjout(o.i, j[1]) + '</div></li>';
-        }).join("") + '</ul></section>';
+    var forcer = filtreActif();
+    $("#liste").innerHTML = parAn.filter(function (g) { return g.liste.length; }).map(function (g) {
+      var groupes = {};
+      g.liste.forEach(function (o) { var m = o.debut.getUTCMonth() + 1; (groupes[m] = groupes[m] || []).push(o); });
+      return '<section class="an" aria-labelledby="h-an-' + g.an + '"><h2 id="h-an-' + g.an + '">' + g.an + '</h2>' + Object.keys(groupes).map(function (m) {
+        var l = groupes[m], id = "m-" + g.an + "-" + m;
+        var courant = g.an === AN0 && +m === auj.getUTCMonth() + 1;
+        var types = {}; l.forEach(function (o) { types[o.j[2] === "CH" ? "FR" : o.j[2]] = 1; });
+        var pts = ORDRE.filter(function (t) { return types[t]; }).map(function (t) { return '<span class="t-' + t + '"></span>'; }).join("");
+        var ouvert = forcer || etat.ouverts[id];
+        return '<details class="mois' + (courant ? " courant" : "") + '" id="' + id + '"' + (ouvert ? " open" : "") + '><summary><h3 style="all:inherit;display:contents">' + maj(MOIS[m - 1]) + ' ' + g.an + '</h3><span class="nb">' + l.length + (l.length > 1 ? " journées" : " journée") + '</span><span class="pts" aria-hidden="true">' + pts + '</span><span class="chev">' + ICO_CHEV + '</span></summary>' +
+          '<ul class="liste">' + (ouvert ? l.map(ligne).join("") : "") + '</ul></details>';
+      }).join("") + '</section>';
     }).join("");
+    majBoutonTout();
   }
+  // Remplit un mois au moment où on l'ouvre (la page reste légère)
+  document.addEventListener("toggle", function (e) {
+    var d = e.target; if (!d.classList || !d.classList.contains("mois")) return;
+    if (!filtreActif()) etat.ouverts[d.id] = d.open;
+    var ul = d.querySelector(".liste");
+    if (d.open && !ul.children.length) {
+      var p = d.id.split("-"), an = +p[1], m = +p[2], q = norm(etat.q.trim());
+      ul.innerHTML = occ(an).filter(function (o) { return o.debut.getUTCMonth() + 1 === m && filtre(o, q); }).map(ligne).join("");
+    }
+    majBoutonTout();
+  }, true);
+  function majBoutonTout() {
+    var ds = document.querySelectorAll(".mois"), tousOuverts = ds.length && Array.prototype.every.call(ds, function (d) { return d.open; });
+    $("#btnTout").textContent = tousOuverts ? "Tout réduire" : "Tout développer";
+    $("#btnTout").hidden = !ds.length;
+  }
+  $("#btnTout").addEventListener("click", function () {
+    var ds = document.querySelectorAll(".mois"), ouvrir = !Array.prototype.every.call(ds, function (d) { return d.open; });
+    ds.forEach(function (d) { d.open = ouvrir; });
+  });
 
   /* Filtres */
   function construireFiltres() {
     $("#types").innerHTML = ORDRE.map(function (t) {
       return '<button class="type t-' + t + '" data-type="' + t + '" aria-pressed="true"><span class="pt" aria-hidden="true"></span>' + LIB_FILTRE[t] + '</button>';
     }).join("");
-    $("#mois").innerHTML = '<option value="tous">Tous les mois</option>' + MOIS.map(function (m, k) { return '<option value="' + (k + 1) + '">' + m.replace(/^./, function (c) { return c.toUpperCase(); }) + '</option>'; }).join("");
+    $("#mois").innerHTML = '<option value="tous">Tous les mois</option>' + MOIS.map(function (m, k) { return '<option value="' + (k + 1) + '">' + maj(m) + '</option>'; }).join("");
     $("#types").addEventListener("click", function (e) {
       var b = e.target.closest(".type"); if (!b) return;
       var t = b.dataset.type; etat.types[t] = etat.types[t] ? 0 : 1;
@@ -447,8 +537,6 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     $("#q").addEventListener("input", function (e) { etat.q = e.target.value; rendreListe(); });
     $("#offic").addEventListener("change", function (e) { etat.offic = e.target.checked; rendreListe(); });
     $("#mois").addEventListener("change", function (e) { etat.mois = e.target.value; rendreListe(); });
-    $("#anPrec").addEventListener("click", function () { etat.an--; rendreListe(); });
-    $("#anSuiv").addEventListener("click", function () { etat.an++; rendreListe(); });
   }
   function reinitialiser() {
     etat.q = ""; etat.offic = false; etat.mois = "tous"; ORDRE.forEach(function (t) { etat.types[t] = 1; });
@@ -522,7 +610,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   $("#nomSite").textContent = C.nomSite; $("#piedNom").textContent = C.nomSite; $("#titreSite").textContent = C.titre;
   $("#numVersion").textContent = VERSION; $("#rappel").checked = !!C.rappelParDefaut;
   $("#txtRappel").textContent = "Rappel la veille à " + C.heureRappel + " h";
-  construireFiltres(); construireAbos(); construireNouv(); rendreHero(); rendreListe();
+  construireFiltres(); construireAbos(); construireNouv(); rendreRecup(); rendreHero(); rendreListe();
 
   if ("serviceWorker" in navigator && /^https:|^http:\/\/localhost/.test(location.href)) navigator.serviceWorker.register("sw.js").catch(function () {});
 })();

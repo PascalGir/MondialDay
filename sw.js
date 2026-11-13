@@ -1,7 +1,7 @@
 /* MondialDay — consultation hors ligne. Changer VERSION à chaque version du site. */
-const VERSION = "1.0";
+const VERSION = "1.1";
 const CACHE = "mondialday-" + VERSION;
-const FICHIERS = ["./", "index.html", "config.js?v=" + VERSION, "journees.js?v=" + VERSION, "nouveautes.js?v=" + VERSION, "icon-180.png"];
+const FICHIERS = ["./", "index.html", "config.js?v=" + VERSION, "journees.js?v=" + VERSION, "nouveautes.js?v=" + VERSION, "journees-auto.js", "icon-180.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FICHIERS)).then(() => self.skipWaiting()));

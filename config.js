@@ -4,8 +4,12 @@ window.CONFIG = {
   titre: "Chaque jour sa journée",
   // Adresse publique du site (sert aux liens d'abonnement au calendrier)
   urlSite: "https://pascalgir.github.io/MondialDay/",
-  // Nombre de jours affichés dans « Ces prochains jours »
-  joursAVenir: 7,
+  // Nombre de jours couverts par « Les prochains jours »
+  joursAVenir: 14,
+  // Nombre d'années affichées dans la liste (l'année en cours, puis les suivantes)
+  anneesAffichees: 2,
+  // Date à laquelle la liste de base a été établie (affichée tant qu'aucune récupération n'a eu lieu)
+  dateListeInitiale: "2026-11-13",
   // Rappel la veille coché par défaut dans l'export, et son heure (0 à 23)
   rappelParDefaut: false,
   heureRappel: 18,

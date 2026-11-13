@@ -9,6 +9,8 @@ Adresse : https://pascalgir.github.io/MondialDay/
 - `index.html` : la page (HTML, CSS et JavaScript). Le bloc `<script id="moteur">` contient le calcul des dates et la création des fichiers .ics.
 - `config.js` : réglages modifiables sans toucher au code (nom, adresse du site, nombre de jours à venir, rappel…).
 - `journees.js` : la liste des journées. Une ligne par journée : `[règle de date, nom, type, officielle (1/0), organisme]`. Les règles de date sont décrites en tête du fichier.
+- `journees-auto.js` : données écrites par la mise à jour automatique (ajouts, corrections de dates, date de la dernière récupération réussie). Ne pas modifier à la main.
+- `outils/mise-a-jour.js` et `.github/workflows/mise-a-jour.yml` : mise à jour automatique le 1er de chaque mois depuis Wikipédia (lancement manuel possible dans l’onglet Actions → « Run workflow »).
 - `nouveautes.js` : historique public affiché dans la fenêtre « Nouveautés ».
 - `calendrier.ics`, `officielles.ics` : calendriers à suivre par abonnement, générés par `node outils/generer-ics.js`.
 - `sw.js` : consultation hors ligne.

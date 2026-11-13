@@ -1,6 +1,18 @@
 /* MondialDay — historique public des versions (le plus récent en premier). */
 window.NOUVEAUTES = [
   {
+    version: "1.1",
+    date: "2026-11-13",
+    type: "Améliorations",
+    points: [
+      "Date de la dernière récupération des informations affichée en haut de la page.",
+      "« Les 14 prochains jours » : toutes les journées des deux semaines à venir, dans l’ordre.",
+      "Liste complète classée par année et par mois, chaque mois se déplie ou se replie d’un toucher ; bouton « Tout développer ».",
+      "L’année suivante (2027) est affichée, et les années défilent ensuite automatiquement.",
+      "Mise à jour automatique de la liste au début de chaque mois."
+    ]
+  },
+  {
     version: "1.0",
     date: "2026-11-13",
     type: "Nouveautés",
