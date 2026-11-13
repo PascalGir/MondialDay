@@ -1,0 +1,4065 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MondialDay//Journees//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MondialDay
+X-WR-CALDESC:Journées mondiales\, internationales et nationales — https:
+ //pascalgir.github.io/MondialDay/
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:md-1gd429d@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250101
+DTEND;VALUE=DATE:20250102
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1
+SUMMARY:Journée mondiale de la paix
+DESCRIPTION:Mondiale · populaire · Saint-Siège\nMondialDay : https://pas
+ calgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-i6yp90@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250104
+DTEND;VALUE=DATE:20250105
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=4
+SUMMARY:Journée mondiale du braille
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1imzlc2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250121
+DTEND;VALUE=DATE:20250122
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=21
+SUMMARY:Journée internationale des câlins
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-hgpgim@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250124
+DTEND;VALUE=DATE:20250125
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=24
+SUMMARY:Journée internationale de l’éducation
+DESCRIPTION:Internationale · officielle · ONU / UNESCO\nMondialDay : http
+ s://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1f6ncnf@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250126
+DTEND;VALUE=DATE:20250127
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=26
+SUMMARY:Journée internationale de l’énergie propre
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tzjqt7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250127
+DTEND;VALUE=DATE:20250128
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=27
+SUMMARY:Journée internationale dédiée à la mémoire des victimes de l
+ ’Holocauste
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ms82q@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250128
+DTEND;VALUE=DATE:20250129
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=28
+SUMMARY:Journée européenne de la protection des données
+DESCRIPTION:Européenne · officielle · Conseil de l’Europe\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vfjf3f@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250126
+DTEND;VALUE=DATE:20250127
+RRULE:FREQ=YEARLY;BYMONTH=1;BYDAY=-1SU
+SUMMARY:Journée mondiale des lépreux
+DESCRIPTION:Mondiale · populaire · Fondation Raoul Follereau\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1yv3u6a@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250130
+DTEND;VALUE=DATE:20250131
+RRULE:FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=30
+SUMMARY:Journée mondiale des maladies tropicales négligées
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1l0foqx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250202
+DTEND;VALUE=DATE:20250203
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=2
+SUMMARY:Journée mondiale des zones humides
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1bpvemj@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250204
+DTEND;VALUE=DATE:20250205
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=4
+SUMMARY:Journée mondiale contre le cancer
+DESCRIPTION:Mondiale · populaire · UICC\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1nm2izi@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250204
+DTEND;VALUE=DATE:20250205
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=4
+SUMMARY:Journée internationale de la fraternité humaine
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-16os3qb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250206
+DTEND;VALUE=DATE:20250207
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=6
+SUMMARY:Journée internationale de la tolérance zéro à l’égard des mu
+ tilations génitales féminines
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-azbczd@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250206
+DTEND;VALUE=DATE:20250209
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=6
+SUMMARY:Journées mondiales sans téléphone portable
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vu3w5g@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250210
+DTEND;VALUE=DATE:20250211
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=10
+SUMMARY:Journée mondiale des légumineuses
+DESCRIPTION:Mondiale · officielle · FAO\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1oohzz5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250211
+DTEND;VALUE=DATE:20250212
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=11
+SUMMARY:Journée internationale des femmes et des filles de science
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-15cq3f7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250211
+DTEND;VALUE=DATE:20250212
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=11
+SUMMARY:Journée européenne du numéro d’urgence 112
+DESCRIPTION:Européenne · officielle · Union européenne\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1mtqey6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250211
+DTEND;VALUE=DATE:20250212
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=11
+SUMMARY:Journée mondiale du malade
+DESCRIPTION:Mondiale · populaire · Saint-Siège\nMondialDay : https://pas
+ calgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-lxlbyu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250212
+DTEND;VALUE=DATE:20250213
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=12
+SUMMARY:Journée internationale de la prévention de l’extrémisme violen
+ t pouvant conduire au terrorisme
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-emlyrk@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250213
+DTEND;VALUE=DATE:20250214
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=13
+SUMMARY:Journée mondiale de la radio
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1q7qpqe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250216
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=15
+SUMMARY:Journée internationale du cancer de l’enfant
+DESCRIPTION:Internationale · populaire · Childhood Cancer International\n
+ MondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-14vowj@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250215
+DTEND;VALUE=DATE:20250216
+RRULE:FREQ=YEARLY;BYMONTH=2;BYDAY=3SA
+SUMMARY:Journée mondiale du pangolin
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-zxv3c3@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250217
+DTEND;VALUE=DATE:20250218
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=17
+SUMMARY:Journée mondiale de la résilience du tourisme
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-m76ri0@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250220
+DTEND;VALUE=DATE:20250221
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=20
+SUMMARY:Journée mondiale de la justice sociale
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xxbyz7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250221
+DTEND;VALUE=DATE:20250222
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=21
+SUMMARY:Journée internationale de la langue maternelle
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vejkon@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250228
+DTEND;VALUE=DATE:20250301
+RRULE:FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=-1
+SUMMARY:Journée internationale des maladies rares
+DESCRIPTION:Internationale · populaire · EURORDIS\nMondialDay : https://p
+ ascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-nsjy95@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250301
+DTEND;VALUE=DATE:20250302
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=1
+SUMMARY:Journée zéro discrimination
+DESCRIPTION:Mondiale · officielle · ONUSIDA\nMondialDay : https://pascalg
+ ir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-zl1oc9@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250304
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=3
+SUMMARY:Journée mondiale de la vie sauvage
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-15770do@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250303
+DTEND;VALUE=DATE:20250304
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=3
+SUMMARY:Journée mondiale de l’audition
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-eliecp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250304
+DTEND;VALUE=DATE:20250305
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=4
+SUMMARY:Journée mondiale de l’ingénierie pour le développement durable
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1cwmx3x@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250305
+DTEND;VALUE=DATE:20250306
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=5
+SUMMARY:Journée internationale pour le désarmement et la non-proliférati
+ on
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1t8gdsy@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250308
+DTEND;VALUE=DATE:20250309
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=8
+SUMMARY:Journée internationale des droits des femmes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-5jwu80@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250310
+DTEND;VALUE=DATE:20250311
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=10
+SUMMARY:Journée internationale des femmes juges
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-2asep@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250313
+DTEND;VALUE=DATE:20250314
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2TH
+SUMMARY:Journée mondiale du rein
+DESCRIPTION:Mondiale · populaire · ISN / IFKF\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-p8uuf9@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250314
+DTEND;VALUE=DATE:20250315
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=14
+SUMMARY:Journée internationale des mathématiques
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ksitt0@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250315
+DTEND;VALUE=DATE:20250316
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=15
+SUMMARY:Journée internationale de la lutte contre l’islamophobie
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-gp9ot3@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250315
+DTEND;VALUE=DATE:20250316
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=15
+SUMMARY:Journée mondiale des droits des consommateurs
+DESCRIPTION:Mondiale · populaire · Consumers International\nMondialDay : 
+ https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1w0sk6f@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250318
+DTEND;VALUE=DATE:20250319
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=18
+SUMMARY:Journée mondiale du recyclage
+DESCRIPTION:Mondiale · populaire · Global Recycling Foundation\nMondialDa
+ y : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-16mvgv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250319
+DTEND;VALUE=DATE:20250320
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=19
+SUMMARY:Journée nationale du souvenir des victimes de la guerre d’Algér
+ ie et des combats en Tunisie et au Maroc
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ob5z2q@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250320
+DTEND;VALUE=DATE:20250321
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20
+SUMMARY:Journée internationale du bonheur
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1dktzr8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250320
+DTEND;VALUE=DATE:20250321
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20
+SUMMARY:Journée internationale de la Francophonie
+DESCRIPTION:Internationale · officielle · OIF\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-jrcvlz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250320
+DTEND;VALUE=DATE:20250321
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20
+SUMMARY:Journée de la langue française aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1b51ye6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250320
+DTEND;VALUE=DATE:20250321
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20
+SUMMARY:Journée mondiale du conte
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1u74z09@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250320
+DTEND;VALUE=DATE:20250321
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20
+SUMMARY:Journée mondiale du moineau
+DESCRIPTION:Mondiale · populaire · Nature Forever Society\nMondialDay : h
+ ttps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-144gdo1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée internationale pour l’élimination de la discrimination 
+ raciale
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-qnwyfs@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la poésie
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-cr9jhr@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée internationale des forêts
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1h4wlsw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la trisomie 21
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1gp1vr2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée internationale du Nowrouz
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-mz8odn@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée mondiale des glaciers
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1pts695@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250321
+DTEND;VALUE=DATE:20250322
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la marionnette
+DESCRIPTION:Mondiale · populaire · UNIMA\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-euouz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250322
+DTEND;VALUE=DATE:20250323
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=22
+SUMMARY:Journée mondiale de l’eau
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-12ie6ig@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250323
+DTEND;VALUE=DATE:20250324
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=23
+SUMMARY:Journée météorologique mondiale
+DESCRIPTION:Mondiale · officielle · OMM\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ayfqe6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250324
+DTEND;VALUE=DATE:20250325
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=24
+SUMMARY:Journée mondiale de lutte contre la tuberculose
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1cezepo@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250324
+DTEND;VALUE=DATE:20250325
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=24
+SUMMARY:Journée internationale pour le droit à la vérité sur les violat
+ ions des droits de l’homme et pour la dignité des victimes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rimv0v@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250325
+DTEND;VALUE=DATE:20250326
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=25
+SUMMARY:Journée internationale de commémoration des victimes de l’escla
+ vage et de la traite transatlantique des esclaves
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-g6n1gp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250325
+DTEND;VALUE=DATE:20250326
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=25
+SUMMARY:Journée internationale de solidarité avec les membres du personne
+ l détenus ou portés disparus
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-6s70uw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250326
+DTEND;VALUE=DATE:20250327
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=26
+SUMMARY:Journée mondiale de l’épilepsie
+DESCRIPTION:Mondiale · populaire · Purple Day\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1v0zshq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250327
+DTEND;VALUE=DATE:20250328
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=27
+SUMMARY:Journée mondiale du théâtre
+DESCRIPTION:Mondiale · populaire · Institut international du théâtre\nM
+ ondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-fb3jkz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250330
+DTEND;VALUE=DATE:20250331
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=30
+SUMMARY:Journée internationale du zéro déchet
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tyjmup@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250331
+DTEND;VALUE=DATE:20250401
+RRULE:FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=31
+SUMMARY:Journée internationale de la visibilité transgenre
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-zpbgwi@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250402
+DTEND;VALUE=DATE:20250403
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=2
+SUMMARY:Journée mondiale de la sensibilisation à l’autisme
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-lilplx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250402
+DTEND;VALUE=DATE:20250403
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=2
+SUMMARY:Journée internationale du livre pour enfants
+DESCRIPTION:Internationale · populaire · IBBY\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1twk6f9@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250404
+DTEND;VALUE=DATE:20250405
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=4
+SUMMARY:Journée internationale pour la sensibilisation au problème des mi
+ nes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-kj1exc@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250405
+DTEND;VALUE=DATE:20250406
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=5
+SUMMARY:Journée internationale de la conscience
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-z9inel@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250406
+DTEND;VALUE=DATE:20250407
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=6
+SUMMARY:Journée internationale du sport au service du développement et de
+  la paix
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-npicz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250407
+DTEND;VALUE=DATE:20250408
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=7
+SUMMARY:Journée mondiale de la santé
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-4elpea@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250407
+DTEND;VALUE=DATE:20250408
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=7
+SUMMARY:Journée internationale de réflexion sur le génocide des Tutsi au
+  Rwanda
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-wuxq8m@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250408
+DTEND;VALUE=DATE:20250409
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=8
+SUMMARY:Journée internationale des Roms
+DESCRIPTION:Internationale · populaire · Congrès mondial rom\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1jkajk0@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250411
+DTEND;VALUE=DATE:20250412
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=11
+SUMMARY:Journée mondiale de la maladie de Parkinson
+DESCRIPTION:Mondiale · populaire · Parkinson’s Europe\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vnm1d1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250412
+DTEND;VALUE=DATE:20250413
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=12
+SUMMARY:Journée internationale du vol spatial habité
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vet8vb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250414
+DTEND;VALUE=DATE:20250415
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=14
+SUMMARY:Journée mondiale de la maladie de Chagas
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1jftke@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250415
+DTEND;VALUE=DATE:20250416
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=15
+SUMMARY:Journée mondiale de l’art
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-t6x3dl@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250417
+DTEND;VALUE=DATE:20250418
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=17
+SUMMARY:Journée mondiale de l’hémophilie
+DESCRIPTION:Mondiale · populaire · Fédération mondiale de l’hémophil
+ ie\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1obmmjb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250418
+DTEND;VALUE=DATE:20250419
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=18
+SUMMARY:Journée internationale des monuments et des sites
+DESCRIPTION:Internationale · officielle · ICOMOS / UNESCO\nMondialDay : h
+ ttps://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-7mw1xa@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250420
+DTEND;VALUE=DATE:20250421
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=20
+SUMMARY:Journée de la langue chinoise aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-cbmzw8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250421
+DTEND;VALUE=DATE:20250422
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la créativité et de l’innovation
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1h417b3@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250422
+DTEND;VALUE=DATE:20250423
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=22
+SUMMARY:Journée internationale de la Terre nourricière
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-s800qe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=23
+SUMMARY:Journée mondiale du livre et du droit d’auteur
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rg222j@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=23
+SUMMARY:Journée de la langue anglaise aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1v3fvop@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250423
+DTEND;VALUE=DATE:20250424
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=23
+SUMMARY:Journée de la langue espagnole aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-hgr1oe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250425
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=24
+SUMMARY:Journée internationale du multilatéralisme et de la diplomatie au
+  service de la paix
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-m5hpdm@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250501
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=24
+SUMMARY:Semaine mondiale de la vaccination
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-k8d7xx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250425
+DTEND;VALUE=DATE:20250426
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=25
+SUMMARY:Journée mondiale de lutte contre le paludisme
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-11bbswq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250425
+DTEND;VALUE=DATE:20250426
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=25
+SUMMARY:Journée internationale des délégués
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-yekx6a@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250426
+DTEND;VALUE=DATE:20250427
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=26
+SUMMARY:Journée mondiale de la propriété intellectuelle
+DESCRIPTION:Mondiale · officielle · OMPI\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1eb69xy@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250426
+DTEND;VALUE=DATE:20250427
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=26
+SUMMARY:Journée internationale du souvenir de la catastrophe de Tchernobyl
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8q1qgu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250430
+DTEND;VALUE=DATE:20250501
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1WE
+SUMMARY:Journée internationale de sensibilisation au bruit
+DESCRIPTION:Internationale · populaire · Center for Hearing and Communica
+ tion\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-18229r2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250427
+DTEND;VALUE=DATE:20250428
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=-1SU
+SUMMARY:Journée nationale du souvenir des victimes et des héros de la Dé
+ portation
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-138ftoo@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250428
+DTEND;VALUE=DATE:20250429
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=28
+SUMMARY:Journée mondiale de la sécurité et de la santé au travail
+DESCRIPTION:Mondiale · officielle · OIT\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8q17hx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250429
+DTEND;VALUE=DATE:20250430
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=29
+SUMMARY:Journée internationale de la danse
+DESCRIPTION:Internationale · populaire · Institut international du théâ
+ tre\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-r47zx2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250430
+DTEND;VALUE=DATE:20250501
+RRULE:FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=30
+SUMMARY:Journée internationale du jazz
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1f7fch5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250501
+DTEND;VALUE=DATE:20250502
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=1
+SUMMARY:Fête du Travail
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vp36qe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250502
+DTEND;VALUE=DATE:20250503
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=2
+SUMMARY:Journée mondiale du thon
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1by02hg@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250503
+DTEND;VALUE=DATE:20250504
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=3
+SUMMARY:Journée mondiale de la liberté de la presse
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-j4bavu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250506
+DTEND;VALUE=DATE:20250507
+RRULE:FREQ=YEARLY;BYMONTH=5;BYDAY=1TU
+SUMMARY:Journée mondiale de l’asthme
+DESCRIPTION:Mondiale · populaire · GINA\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-cqe4vz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250505
+DTEND;VALUE=DATE:20250506
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=5
+SUMMARY:Journée mondiale de l’hygiène des mains
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1sskmxa@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250505
+DTEND;VALUE=DATE:20250506
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=5
+SUMMARY:Journée du patrimoine mondial africain
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rxcc0g@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250505
+DTEND;VALUE=DATE:20250506
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=5
+SUMMARY:Journée mondiale de la langue portugaise
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-199o2cc@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250505
+DTEND;VALUE=DATE:20250506
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=5
+SUMMARY:Journée internationale de la sage-femme
+DESCRIPTION:Internationale · populaire · Confédération internationale d
+ es sages-femmes\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1fjw3np@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250508
+DTEND;VALUE=DATE:20250509
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=8
+SUMMARY:Victoire du 8 mai 1945
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-nftpgf@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250508
+DTEND;VALUE=DATE:20250509
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=8
+SUMMARY:Journée mondiale de la Croix-Rouge et du Croissant-Rouge
+DESCRIPTION:Mondiale · populaire · Mouvement international de la Croix-Ro
+ uge\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-55c784@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250509
+DTEND;VALUE=DATE:20250510
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=9
+SUMMARY:Journée de l’Europe
+DESCRIPTION:Européenne · officielle · Union européenne\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1m178f@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250510
+DTEND;VALUE=DATE:20250511
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=10
+SUMMARY:Journée nationale des mémoires de la traite\, de l’esclavage et
+  de leurs abolitions
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1fps5ni@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250510
+DTEND;VALUE=DATE:20250511
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=10
+SUMMARY:Journée internationale de l’arganier
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-m9rfur@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250510
+DTEND;VALUE=DATE:20250511
+RRULE:FREQ=YEARLY;BYMONTH=5;BYDAY=2SA
+SUMMARY:Journée mondiale des oiseaux migrateurs
+DESCRIPTION:Mondiale · officielle · PNUE\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-18eajxq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250510
+DTEND;VALUE=DATE:20250511
+RRULE:FREQ=YEARLY;BYMONTH=5;BYDAY=2SA
+SUMMARY:Journée mondiale du commerce équitable
+DESCRIPTION:Mondiale · populaire · World Fair Trade Organization\nMondial
+ Day : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ly6vl6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250511
+DTEND;VALUE=DATE:20250512
+RRULE:FREQ=YEARLY;BYMONTH=5;BYDAY=2SU
+SUMMARY:Fête des mères en Suisse
+DESCRIPTION:Suisse · populaire · Tradition\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Suisse
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-c3tvug@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250512
+DTEND;VALUE=DATE:20250513
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=12
+SUMMARY:Journée internationale de l’infirmière
+DESCRIPTION:Internationale · populaire · Conseil international des infirm
+ ières\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-fkvc6z@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250512
+DTEND;VALUE=DATE:20250513
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=12
+SUMMARY:Journée internationale de la santé des végétaux
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ruydp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250515
+DTEND;VALUE=DATE:20250516
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=15
+SUMMARY:Journée internationale des familles
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-dgw67v@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250516
+DTEND;VALUE=DATE:20250517
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=16
+SUMMARY:Journée internationale du vivre-ensemble en paix
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-151wtc7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250516
+DTEND;VALUE=DATE:20250517
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=16
+SUMMARY:Journée internationale de la lumière
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-31qbz4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250517
+DTEND;VALUE=DATE:20250518
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=17
+SUMMARY:Journée mondiale des télécommunications et de la société de l
+ ’information
+DESCRIPTION:Mondiale · officielle · UIT\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-lciiss@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250517
+DTEND;VALUE=DATE:20250518
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=17
+SUMMARY:Journée internationale contre l’homophobie\, la transphobie et l
+ a biphobie
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-b92qzx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250517
+DTEND;VALUE=DATE:20250518
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=17
+SUMMARY:Journée mondiale de l’hypertension artérielle
+DESCRIPTION:Mondiale · populaire · World Hypertension League\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-udacf5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250518
+DTEND;VALUE=DATE:20250519
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=18
+SUMMARY:Journée internationale des musées
+DESCRIPTION:Internationale · populaire · ICOM\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-igsn75@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250520
+DTEND;VALUE=DATE:20250521
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=20
+SUMMARY:Journée mondiale des abeilles
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-c926fd@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250521
+DTEND;VALUE=DATE:20250522
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=21
+SUMMARY:Journée internationale du thé
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-t9mia6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250521
+DTEND;VALUE=DATE:20250522
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la diversité culturelle pour le dialogue et l
+ e développement
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1bxgotd@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250522
+DTEND;VALUE=DATE:20250523
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=22
+SUMMARY:Journée internationale de la diversité biologique
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xzsq3q@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250523
+DTEND;VALUE=DATE:20250524
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=23
+SUMMARY:Journée internationale pour l’élimination de la fistule obstét
+ ricale
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-n85l6g@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250523
+DTEND;VALUE=DATE:20250524
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=23
+SUMMARY:Journée mondiale de la tortue
+DESCRIPTION:Mondiale · populaire · American Tortoise Rescue\nMondialDay :
+  https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-133irtu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250524
+DTEND;VALUE=DATE:20250525
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=24
+SUMMARY:Journée européenne des parcs
+DESCRIPTION:Européenne · populaire · Fédération EUROPARC\nMondialDay :
+  https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1uy5mbp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250525
+DTEND;VALUE=DATE:20250526
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=25
+SUMMARY:Journée internationale des enfants disparus
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-kxkoi4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250527
+DTEND;VALUE=DATE:20250528
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=27
+SUMMARY:Journée nationale de la Résistance
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-xwaf18@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250528
+DTEND;VALUE=DATE:20250529
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=28
+SUMMARY:Journée mondiale de l’hygiène menstruelle
+DESCRIPTION:Mondiale · populaire · WASH United\nMondialDay : https://pasc
+ algir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-4q6pxr@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250529
+DTEND;VALUE=DATE:20250530
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=29
+SUMMARY:Journée internationale des Casques bleus des Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rvbm26@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250530
+DTEND;VALUE=DATE:20250531
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=30
+SUMMARY:Journée internationale de la pomme de terre
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rord71@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250530
+DTEND;VALUE=DATE:20250531
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=30
+SUMMARY:Journée mondiale de la sclérose en plaques
+DESCRIPTION:Mondiale · populaire · Fédération internationale de la SEP\
+ nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1a069ls@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250531
+DTEND;VALUE=DATE:20250601
+RRULE:FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=31
+SUMMARY:Journée mondiale sans tabac
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2025@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250525
+DTEND;VALUE=DATE:20250526
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2026@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2027@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2028@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20280528
+DTEND;VALUE=DATE:20280529
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2029@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2030@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20300526
+DTEND;VALUE=DATE:20300527
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2031@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20310525
+DTEND;VALUE=DATE:20310526
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2032@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20320530
+DTEND;VALUE=DATE:20320531
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2033@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20330529
+DTEND;VALUE=DATE:20330530
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60izv4-2034@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20340604
+DTEND;VALUE=DATE:20340605
+SUMMARY:Fête des mères
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-p35f2f@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250601
+DTEND;VALUE=DATE:20250602
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=1
+SUMMARY:Journée mondiale des parents
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1qmeubf@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250601
+DTEND;VALUE=DATE:20250602
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=1
+SUMMARY:Journée mondiale du lait
+DESCRIPTION:Mondiale · officielle · FAO\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8wsak7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250601
+DTEND;VALUE=DATE:20250602
+RRULE:FREQ=YEARLY;BYMONTH=6;BYDAY=1SU
+SUMMARY:Fête des pères en Suisse
+DESCRIPTION:Suisse · populaire · Tradition\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Suisse
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-afhr9m@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250603
+DTEND;VALUE=DATE:20250604
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=3
+SUMMARY:Journée mondiale de la bicyclette
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tfkb9h@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250604
+DTEND;VALUE=DATE:20250605
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=4
+SUMMARY:Journée internationale des enfants victimes innocentes de l’agre
+ ssion
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1i59dpw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250605
+DTEND;VALUE=DATE:20250606
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=5
+SUMMARY:Journée mondiale de l’environnement
+DESCRIPTION:Mondiale · officielle · PNUE\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1iux7sg@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250605
+DTEND;VALUE=DATE:20250606
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=5
+SUMMARY:Journée internationale de la lutte contre la pêche illicite\, non
+  déclarée et non réglementée
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1q2fidi@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250606
+DTEND;VALUE=DATE:20250607
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=6
+SUMMARY:Journée de la langue russe aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-p9bcz7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250607
+DTEND;VALUE=DATE:20250608
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=7
+SUMMARY:Journée mondiale de la sécurité sanitaire des aliments
+DESCRIPTION:Mondiale · officielle · ONU / OMS\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vc50y5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250608
+DTEND;VALUE=DATE:20250609
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=8
+SUMMARY:Journée mondiale de l’océan
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1398a4l@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250608
+DTEND;VALUE=DATE:20250609
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=8
+SUMMARY:Journée nationale d’hommage aux morts pour la France en Indochin
+ e
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-15zsuyv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250609
+DTEND;VALUE=DATE:20250610
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=9
+SUMMARY:Journée internationale des archives
+DESCRIPTION:Internationale · populaire · Conseil international des archiv
+ es\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-qip69m@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250610
+DTEND;VALUE=DATE:20250611
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=10
+SUMMARY:Journée internationale du dialogue entre les civilisations
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-157bv6u@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250611
+DTEND;VALUE=DATE:20250612
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=11
+SUMMARY:Journée internationale du jeu
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-szrkhe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250612
+DTEND;VALUE=DATE:20250613
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=12
+SUMMARY:Journée mondiale contre le travail des enfants
+DESCRIPTION:Mondiale · officielle · OIT\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-gh3pyb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250613
+DTEND;VALUE=DATE:20250614
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=13
+SUMMARY:Journée internationale de sensibilisation à l’albinisme
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-rvpud8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250614
+DTEND;VALUE=DATE:20250615
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=14
+SUMMARY:Journée mondiale du donneur de sang
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1h0u79j@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250615
+DTEND;VALUE=DATE:20250616
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=15
+SUMMARY:Journée mondiale de sensibilisation à la maltraitance des personn
+ es âgées
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ihq0x6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250616
+DTEND;VALUE=DATE:20250617
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=16
+SUMMARY:Journée internationale des envois de fonds à la famille
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1pe07ge@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250617
+DTEND;VALUE=DATE:20250618
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=17
+SUMMARY:Journée mondiale de la lutte contre la désertification et la séc
+ heresse
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-124j78i@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250618
+DTEND;VALUE=DATE:20250619
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=18
+SUMMARY:Journée de la gastronomie durable
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1jexofe@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250618
+DTEND;VALUE=DATE:20250619
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=18
+SUMMARY:Journée nationale commémorative de l’appel du 18 juin 1940
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-pexcbq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250618
+DTEND;VALUE=DATE:20250619
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=18
+SUMMARY:Journée internationale du pique-nique
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-2rh3zo@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250615
+DTEND;VALUE=DATE:20250616
+RRULE:FREQ=YEARLY;BYMONTH=6;BYDAY=3SU
+SUMMARY:Fête des pères
+DESCRIPTION:France · populaire · Tradition\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-16ad2l1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250619
+DTEND;VALUE=DATE:20250620
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=19
+SUMMARY:Journée internationale pour l’élimination de la violence sexuel
+ le en temps de conflit
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-31xzev@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250619
+DTEND;VALUE=DATE:20250620
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=19
+SUMMARY:Journée mondiale de la drépanocytose
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ivoy47@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250620
+DTEND;VALUE=DATE:20250621
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=20
+SUMMARY:Journée mondiale des réfugiés
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-m7trfz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250621
+DTEND;VALUE=DATE:20250622
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=21
+SUMMARY:Journée internationale du yoga
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-nga8tl@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250621
+DTEND;VALUE=DATE:20250622
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=21
+SUMMARY:Journée internationale de la célébration du solstice
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1mcjq77@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250621
+DTEND;VALUE=DATE:20250622
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=21
+SUMMARY:Fête de la musique
+DESCRIPTION:France · officielle · Ministère de la Culture\nMondialDay : 
+ https://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1em45ai@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250621
+DTEND;VALUE=DATE:20250622
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la girafe
+DESCRIPTION:Mondiale · populaire · Giraffe Conservation Foundation\nMondi
+ alDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tbbype@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250623
+DTEND;VALUE=DATE:20250624
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=23
+SUMMARY:Journée de la fonction publique des Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xvqizc@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250623
+DTEND;VALUE=DATE:20250624
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=23
+SUMMARY:Journée internationale des veuves
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-y2g9ek@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250623
+DTEND;VALUE=DATE:20250624
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=23
+SUMMARY:Journée olympique
+DESCRIPTION:Mondiale · populaire · Comité international olympique\nMondi
+ alDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1hu5ier@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250624
+DTEND;VALUE=DATE:20250625
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=24
+SUMMARY:Journée internationale des femmes dans la diplomatie
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1h2w07w@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250625
+DTEND;VALUE=DATE:20250626
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=25
+SUMMARY:Journée internationale des gens de mer
+DESCRIPTION:Internationale · officielle · OMI\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-19vso6v@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250626
+DTEND;VALUE=DATE:20250627
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=26
+SUMMARY:Journée internationale contre l’abus et le trafic de drogues
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-pz7sn6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250626
+DTEND;VALUE=DATE:20250627
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=26
+SUMMARY:Journée internationale pour le soutien aux victimes de la torture
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-17kj8qz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250627
+DTEND;VALUE=DATE:20250628
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=27
+SUMMARY:Journée des micro-\, petites et moyennes entreprises
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-mcsomu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250629
+DTEND;VALUE=DATE:20250630
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=29
+SUMMARY:Journée internationale des tropiques
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1d1muvn@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250630
+DTEND;VALUE=DATE:20250701
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=30
+SUMMARY:Journée internationale des astéroïdes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-11ijmue@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250630
+DTEND;VALUE=DATE:20250701
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=30
+SUMMARY:Journée internationale du parlementarisme
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-19rjtpt@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250630
+DTEND;VALUE=DATE:20250701
+RRULE:FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=30
+SUMMARY:Journée mondiale des réseaux sociaux
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-5e3qq1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250705
+DTEND;VALUE=DATE:20250706
+RRULE:FREQ=YEARLY;BYMONTH=7;BYDAY=1SA
+SUMMARY:Journée internationale des coopératives
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-jq3jkz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250703
+DTEND;VALUE=DATE:20250704
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=3
+SUMMARY:Journée internationale sans sac plastique
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-c27to0@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250706
+DTEND;VALUE=DATE:20250707
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=6
+SUMMARY:Journée mondiale des zoonoses
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1cf1sq7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250707
+DTEND;VALUE=DATE:20250708
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=7
+SUMMARY:Journée mondiale du kiswahili
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-fxv82l@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250707
+DTEND;VALUE=DATE:20250708
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=7
+SUMMARY:Journée mondiale du chocolat
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-z3hjdp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250711
+DTEND;VALUE=DATE:20250712
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=11
+SUMMARY:Journée mondiale de la population
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ynje41@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250711
+DTEND;VALUE=DATE:20250712
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=11
+SUMMARY:Journée internationale de réflexion et de commémoration du géno
+ cide de Srebrenica
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1p83jcp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250712
+DTEND;VALUE=DATE:20250713
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=12
+SUMMARY:Journée internationale de lutte contre les tempêtes de sable et d
+ e poussière
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-13rncy8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250714
+DTEND;VALUE=DATE:20250715
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=14
+SUMMARY:Fête nationale
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-k4j6a6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250715
+DTEND;VALUE=DATE:20250716
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=15
+SUMMARY:Journée mondiale des compétences des jeunes
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-vqikl3@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250713
+DTEND;VALUE=DATE:20250714
+RRULE:FREQ=YEARLY;BYMONTH=7;BYDAY=SU;BYMONTHDAY=13,14,15,16,17,18,19
+SUMMARY:Journée nationale à la mémoire des victimes des crimes racistes 
+ et antisémites de l’État français
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1evpcux@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250717
+DTEND;VALUE=DATE:20250718
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=17
+SUMMARY:Journée mondiale des emojis
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1d029by@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250718
+DTEND;VALUE=DATE:20250719
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=18
+SUMMARY:Journée internationale Nelson Mandela
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1upgf1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250720
+DTEND;VALUE=DATE:20250721
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=20
+SUMMARY:Journée mondiale des échecs
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ck9gyq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250725
+DTEND;VALUE=DATE:20250726
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=25
+SUMMARY:Journée mondiale de la prévention des noyades
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-nupuch@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250727
+DTEND;VALUE=DATE:20250728
+RRULE:FREQ=YEARLY;BYMONTH=7;BYDAY=4SU
+SUMMARY:Journée mondiale des grands-parents et des personnes âgées
+DESCRIPTION:Mondiale · populaire · Saint-Siège\nMondialDay : https://pas
+ calgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1gko26e@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250726
+DTEND;VALUE=DATE:20250727
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=26
+SUMMARY:Journée internationale pour la conservation de l’écosystème de
+ s mangroves
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-10qt3zs@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250728
+DTEND;VALUE=DATE:20250729
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=28
+SUMMARY:Journée mondiale contre l’hépatite
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1uovpxp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250729
+DTEND;VALUE=DATE:20250730
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=29
+SUMMARY:Journée mondiale du tigre
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-rs1dze@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250730
+DTEND;VALUE=DATE:20250731
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=30
+SUMMARY:Journée internationale de l’amitié
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-e0iplk@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250730
+DTEND;VALUE=DATE:20250731
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=30
+SUMMARY:Journée mondiale de la lutte contre la traite d’êtres humains
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-xk0nzs@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250731
+DTEND;VALUE=DATE:20250801
+RRULE:FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=31
+SUMMARY:Journée internationale de la femme africaine
+DESCRIPTION:Internationale · officielle · Union africaine\nMondialDay : h
+ ttps://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-11820nl@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250801
+DTEND;VALUE=DATE:20250802
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=1
+SUMMARY:Fête nationale suisse
+DESCRIPTION:Suisse · officielle · Confédération suisse\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Suisse
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1tw2tl2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250801
+DTEND;VALUE=DATE:20250808
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=1
+SUMMARY:Semaine mondiale de l’allaitement maternel
+DESCRIPTION:Mondiale · officielle · OMS / UNICEF\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-pyln3y@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250801
+DTEND;VALUE=DATE:20250802
+RRULE:FREQ=YEARLY;BYMONTH=8;BYDAY=1FR
+SUMMARY:Journée internationale de la bière
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-50azus@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250808
+DTEND;VALUE=DATE:20250809
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=8
+SUMMARY:Journée internationale du chat
+DESCRIPTION:Internationale · populaire · IFAW\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-legss5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250809
+DTEND;VALUE=DATE:20250810
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=9
+SUMMARY:Journée internationale des peuples autochtones
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1696hqw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250812
+DTEND;VALUE=DATE:20250813
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=12
+SUMMARY:Journée internationale de la jeunesse
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1tfrjpp@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250812
+DTEND;VALUE=DATE:20250813
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=12
+SUMMARY:Journée mondiale de l’éléphant
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-11wxhin@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250813
+DTEND;VALUE=DATE:20250814
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=13
+SUMMARY:Journée internationale des gauchers
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1htrzml@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250819
+DTEND;VALUE=DATE:20250820
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=19
+SUMMARY:Journée mondiale de l’aide humanitaire
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-3y26d9@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250819
+DTEND;VALUE=DATE:20250820
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=19
+SUMMARY:Journée mondiale de la photographie
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-4xlxhk@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250821
+DTEND;VALUE=DATE:20250822
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=21
+SUMMARY:Journée internationale du souvenir en hommage aux victimes du terr
+ orisme
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-19p4f5z@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250822
+DTEND;VALUE=DATE:20250823
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=22
+SUMMARY:Journée internationale de commémoration des victimes de violences
+  en raison de leur religion ou de leurs convictions
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-7wthjw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250823
+DTEND;VALUE=DATE:20250824
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=23
+SUMMARY:Journée internationale du souvenir de la traite négrière et de s
+ on abolition
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1d4c4ls@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250823
+DTEND;VALUE=DATE:20250824
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=23
+SUMMARY:Journée européenne du souvenir des victimes des régimes totalita
+ ires
+DESCRIPTION:Européenne · officielle · Union européenne\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1cp8vxb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250826
+DTEND;VALUE=DATE:20250827
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=26
+SUMMARY:Journée internationale du chien
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-yzxqxo@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250829
+DTEND;VALUE=DATE:20250830
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=29
+SUMMARY:Journée internationale contre les essais nucléaires
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-6rkok5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250830
+DTEND;VALUE=DATE:20250831
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=30
+SUMMARY:Journée internationale des victimes de disparition forcée
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vslrpk@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250831
+DTEND;VALUE=DATE:20250901
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=31
+SUMMARY:Journée internationale des personnes d’ascendance africaine
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-etmwms@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250831
+DTEND;VALUE=DATE:20250901
+RRULE:FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=31
+SUMMARY:Journée internationale de sensibilisation aux surdoses
+DESCRIPTION:Internationale · populaire · Penington Institute\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-yqxi3r@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250905
+DTEND;VALUE=DATE:20250906
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=5
+SUMMARY:Journée internationale de la charité
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-hi6stn@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250907
+DTEND;VALUE=DATE:20250908
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=7
+SUMMARY:Journée internationale de l’air pur pour des ciels bleus
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-d7qd02@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250908
+DTEND;VALUE=DATE:20250909
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=8
+SUMMARY:Journée internationale de l’alphabétisation
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ddi5x1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250908
+DTEND;VALUE=DATE:20250909
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=8
+SUMMARY:Journée mondiale de la kinésithérapie
+DESCRIPTION:Mondiale · populaire · World Physiotherapy\nMondialDay : http
+ s://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1apzs6e@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250909
+DTEND;VALUE=DATE:20250910
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=9
+SUMMARY:Journée internationale pour la protection de l’éducation contre
+  les attaques
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-16zpeh2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250910
+DTEND;VALUE=DATE:20250911
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=10
+SUMMARY:Journée mondiale de la prévention du suicide
+DESCRIPTION:Mondiale · officielle · OMS / IASP\nMondialDay : https://pasc
+ algir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-cmlzov@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250913
+DTEND;VALUE=DATE:20250914
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=2SA
+SUMMARY:Journée mondiale des premiers secours
+DESCRIPTION:Mondiale · populaire · Croix-Rouge et Croissant-Rouge\nMondia
+ lDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-lez1wl@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250912
+DTEND;VALUE=DATE:20250913
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=12
+SUMMARY:Journée des Nations Unies pour la coopération Sud-Sud
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1fk7x1p@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250915
+DTEND;VALUE=DATE:20250916
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=15
+SUMMARY:Journée internationale de la démocratie
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1kdiikd@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250916
+DTEND;VALUE=DATE:20250917
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=16
+SUMMARY:Journée internationale de la protection de la couche d’ozone
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tnq4li@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250917
+DTEND;VALUE=DATE:20250918
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=17
+SUMMARY:Journée mondiale de la sécurité des patients
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1o7bbj6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250918
+DTEND;VALUE=DATE:20250919
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=18
+SUMMARY:Journée internationale de l’égalité de rémunération
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-l7jvb2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250920
+DTEND;VALUE=DATE:20250922
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=3SA
+SUMMARY:Journées européennes du patrimoine
+DESCRIPTION:Européenne · officielle · Conseil de l’Europe / UE\nMondia
+ lDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ez7sm4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250920
+DTEND;VALUE=DATE:20250921
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=3SA
+SUMMARY:Journée mondiale du nettoyage de la planète
+DESCRIPTION:Mondiale · populaire · World Cleanup Day\nMondialDay : https:
+ //pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1jo22qy@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250921
+DTEND;VALUE=DATE:20250922
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=3SU
+SUMMARY:Jeûne fédéral
+DESCRIPTION:Suisse · officielle · Confédération suisse\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Suisse
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-a6x47h@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250921
+DTEND;VALUE=DATE:20250922
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=21
+SUMMARY:Journée internationale de la paix
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-6rr3ie@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250921
+DTEND;VALUE=DATE:20250922
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la maladie d’Alzheimer
+DESCRIPTION:Mondiale · populaire · Alzheimer’s Disease International\nM
+ ondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1aqr69p@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250922
+DTEND;VALUE=DATE:20250923
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=22
+SUMMARY:Journée mondiale sans voiture
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1b6hpup@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250923
+DTEND;VALUE=DATE:20250924
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=23
+SUMMARY:Journée internationale des langues des signes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1i1j1zy@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250925
+DTEND;VALUE=DATE:20250926
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=25
+SUMMARY:Journée nationale d’hommage aux harkis
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xy6e4k@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250925
+DTEND;VALUE=DATE:20250926
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=25
+SUMMARY:Journée mondiale du pharmacien
+DESCRIPTION:Mondiale · populaire · Fédération internationale pharmaceut
+ ique\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-c5vejg@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250926
+DTEND;VALUE=DATE:20250927
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=26
+SUMMARY:Journée internationale pour l’élimination totale des armes nucl
+ éaires
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1sobnh4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250926
+DTEND;VALUE=DATE:20250927
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=26
+SUMMARY:Journée européenne des langues
+DESCRIPTION:Européenne · officielle · Conseil de l’Europe\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-i5scfn@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250926
+DTEND;VALUE=DATE:20250927
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=26
+SUMMARY:Journée mondiale de la contraception
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vbwzse@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250927
+DTEND;VALUE=DATE:20250928
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=27
+SUMMARY:Journée mondiale du tourisme
+DESCRIPTION:Mondiale · officielle · ONU Tourisme\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-pd5bue@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250928
+DTEND;VALUE=DATE:20250929
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=28
+SUMMARY:Journée internationale de l’accès universel à l’information
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-11seqyr@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250928
+DTEND;VALUE=DATE:20250929
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=28
+SUMMARY:Journée mondiale contre la rage
+DESCRIPTION:Mondiale · populaire · Global Alliance for Rabies Control\nMo
+ ndialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-19zkt2c@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250929
+DTEND;VALUE=DATE:20250930
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=29
+SUMMARY:Journée internationale de sensibilisation aux pertes et gaspillage
+ s de nourriture
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-tw9t6h@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250929
+DTEND;VALUE=DATE:20250930
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=29
+SUMMARY:Journée mondiale du cœur
+DESCRIPTION:Mondiale · populaire · Fédération mondiale du cœur\nMondia
+ lDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-42nfsi@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250925
+DTEND;VALUE=DATE:20250926
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=-1TH
+SUMMARY:Journée mondiale de la mer
+DESCRIPTION:Mondiale · officielle · OMI\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ry7278@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20250930
+DTEND;VALUE=DATE:20251001
+RRULE:FREQ=YEARLY;BYMONTH=9;BYMONTHDAY=30
+SUMMARY:Journée internationale de la traduction
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-zmpbse@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251001
+DTEND;VALUE=DATE:20251002
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=1
+SUMMARY:Journée internationale des personnes âgées
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1gskwxj@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251001
+DTEND;VALUE=DATE:20251002
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=1
+SUMMARY:Journée internationale du café
+DESCRIPTION:Internationale · officielle · Organisation internationale du 
+ café\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1gl1r54@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251001
+DTEND;VALUE=DATE:20251002
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=1
+SUMMARY:Journée mondiale du végétarisme
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-zc6anr@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251002
+DTEND;VALUE=DATE:20251003
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=2
+SUMMARY:Journée internationale de la non-violence
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-f74o0o@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251006
+DTEND;VALUE=DATE:20251007
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1MO
+SUMMARY:Journée mondiale de l’habitat
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-egda25@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251003
+DTEND;VALUE=DATE:20251004
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1FR
+SUMMARY:Journée mondiale du sourire
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-5l8dn1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251004
+DTEND;VALUE=DATE:20251005
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=4
+SUMMARY:Journée mondiale des animaux
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-at10gu@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251005
+DTEND;VALUE=DATE:20251006
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=5
+SUMMARY:Journée mondiale des enseignants
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1oj45c4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251009
+DTEND;VALUE=DATE:20251010
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=9
+SUMMARY:Journée mondiale de la poste
+DESCRIPTION:Mondiale · officielle · UPU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-beh3gv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251011
+DTEND;VALUE=DATE:20251012
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=2SA
+SUMMARY:Journée mondiale des oiseaux migrateurs (automne)
+DESCRIPTION:Mondiale · officielle · PNUE\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1gpidxm@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251010
+DTEND;VALUE=DATE:20251011
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=10
+SUMMARY:Journée mondiale de la santé mentale
+DESCRIPTION:Mondiale · officielle · OMS\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-132cbcz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251010
+DTEND;VALUE=DATE:20251011
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=10
+SUMMARY:Journée mondiale contre la peine de mort
+DESCRIPTION:Mondiale · populaire · Coalition mondiale contre la peine de 
+ mort\nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1wuj53y@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251010
+DTEND;VALUE=DATE:20251011
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=10
+SUMMARY:Journée européenne contre la peine de mort
+DESCRIPTION:Européenne · officielle · Conseil de l’Europe / UE\nMondia
+ lDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1n9m8a4@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251011
+DTEND;VALUE=DATE:20251012
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=11
+SUMMARY:Journée internationale de la fille
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-fezubc@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251009
+DTEND;VALUE=DATE:20251010
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=2TH
+SUMMARY:Journée mondiale de la vue
+DESCRIPTION:Mondiale · populaire · IAPB\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-115dgjy@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251012
+DTEND;VALUE=DATE:20251013
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=12
+SUMMARY:Journée mondiale de l’arthrite
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-snfo20@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251013
+DTEND;VALUE=DATE:20251014
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=13
+SUMMARY:Journée internationale de la réduction des risques de catastrophe
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-ke9cvt@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251015
+DTEND;VALUE=DATE:20251016
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=15
+SUMMARY:Journée internationale de la femme rurale
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1vw1j4r@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251015
+DTEND;VALUE=DATE:20251016
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=15
+SUMMARY:Journée mondiale du lavage des mains
+DESCRIPTION:Mondiale · populaire · Global Handwashing Partnership\nMondia
+ lDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-vl58is@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251016
+DTEND;VALUE=DATE:20251017
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=16
+SUMMARY:Journée mondiale de l’alimentation
+DESCRIPTION:Mondiale · officielle · FAO\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1muppe6@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251017
+DTEND;VALUE=DATE:20251018
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=17
+SUMMARY:Journée internationale pour l’élimination de la pauvreté
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xu3pu3@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251018
+DTEND;VALUE=DATE:20251019
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=18
+SUMMARY:Journée européenne de lutte contre la traite des êtres humains
+DESCRIPTION:Européenne · officielle · Union européenne\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-43h434@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251020
+DTEND;VALUE=DATE:20251021
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=20
+SUMMARY:Journée mondiale de l’ostéoporose
+DESCRIPTION:Mondiale · populaire · International Osteoporosis Foundation\
+ nMondialDay : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-j8q8px@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=24
+SUMMARY:Journée des Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-9jq4vw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=24
+SUMMARY:Journée mondiale d’information sur le développement
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1dvblur@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=24
+SUMMARY:Journée mondiale contre la polio
+DESCRIPTION:Mondiale · populaire · Rotary International\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-srwnao@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251027
+DTEND;VALUE=DATE:20251028
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=27
+SUMMARY:Journée mondiale du patrimoine audiovisuel
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1wy3nky@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251028
+DTEND;VALUE=DATE:20251029
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=28
+SUMMARY:Journée internationale de l’animation
+DESCRIPTION:Internationale · populaire · ASIFA\nMondialDay : https://pasc
+ algir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-xpuisd@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251029
+DTEND;VALUE=DATE:20251030
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=29
+SUMMARY:Journée mondiale de l’accident vasculaire cérébral
+DESCRIPTION:Mondiale · populaire · World Stroke Organization\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1feam1x@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251031
+DTEND;VALUE=DATE:20251101
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=31
+SUMMARY:Journée mondiale des villes
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-yzbv1o@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251031
+DTEND;VALUE=DATE:20251101
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=31
+SUMMARY:Journée mondiale de l’épargne
+DESCRIPTION:Mondiale · populaire · Initiative populaire\nMondialDay : htt
+ ps://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-u4p9k@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251101
+DTEND;VALUE=DATE:20251102
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=1
+SUMMARY:Journée mondiale du véganisme
+DESCRIPTION:Mondiale · populaire · Vegan Society\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-9tvfva@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251102
+DTEND;VALUE=DATE:20251103
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=2
+SUMMARY:Journée internationale de la fin de l’impunité pour les crimes 
+ commis contre des journalistes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-wv3sot@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251105
+DTEND;VALUE=DATE:20251106
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=5
+SUMMARY:Journée mondiale de sensibilisation aux tsunamis
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-r8rym8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251105
+DTEND;VALUE=DATE:20251106
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=5
+SUMMARY:Journée internationale de la langue romani
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8v63uf@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251106
+DTEND;VALUE=DATE:20251107
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=6
+SUMMARY:Journée internationale pour la prévention de l’exploitation de 
+ l’environnement en temps de guerre et de conflit armé
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1i59y3v@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251110
+DTEND;VALUE=DATE:20251111
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=10
+SUMMARY:Journée mondiale de la science au service de la paix et du dévelo
+ ppement
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8hijf5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251111
+DTEND;VALUE=DATE:20251112
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=11
+SUMMARY:Armistice du 11 novembre 1918
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1i3696k@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251112
+DTEND;VALUE=DATE:20251113
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=12
+SUMMARY:Journée mondiale de la pneumonie
+DESCRIPTION:Mondiale · populaire · Stop Pneumonia\nMondialDay : https://p
+ ascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1un0cx0@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251113
+DTEND;VALUE=DATE:20251114
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=2TH
+SUMMARY:Futur en tous genres
+DESCRIPTION:Suisse · populaire · Cantons suisses\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Suisse
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-60hjeq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251113
+DTEND;VALUE=DATE:20251114
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=13
+SUMMARY:Journée mondiale de la gentillesse
+DESCRIPTION:Mondiale · populaire · World Kindness Movement\nMondialDay : 
+ https://pascalgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-195dn26@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251114
+DTEND;VALUE=DATE:20251115
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=14
+SUMMARY:Journée mondiale du diabète
+DESCRIPTION:Mondiale · officielle · ONU / OMS\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1yhd2f8@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251120
+DTEND;VALUE=DATE:20251121
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=3TH
+SUMMARY:Journée mondiale de la philosophie
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ly6p9h@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251116
+DTEND;VALUE=DATE:20251117
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=16
+SUMMARY:Journée internationale de la tolérance
+DESCRIPTION:Internationale · officielle · UNESCO\nMondialDay : https://pa
+ scalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ky42s7@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251117
+DTEND;VALUE=DATE:20251118
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=17
+SUMMARY:Journée mondiale de la prématurité
+DESCRIPTION:Mondiale · populaire · EFCNI\nMondialDay : https://pascalgir.
+ github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1xrzibv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251116
+DTEND;VALUE=DATE:20251117
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=3SU
+SUMMARY:Journée mondiale du souvenir des victimes de la route
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1qmmnzx@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251118
+DTEND;VALUE=DATE:20251119
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=18
+SUMMARY:Journée européenne pour la protection des enfants contre l’expl
+ oitation et les abus sexuels
+DESCRIPTION:Européenne · officielle · Conseil de l’Europe\nMondialDay 
+ : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-wj2j9r@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251118
+DTEND;VALUE=DATE:20251119
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=18
+SUMMARY:Journée européenne d’information sur les antibiotiques
+DESCRIPTION:Européenne · officielle · ECDC\nMondialDay : https://pascalg
+ ir.github.io/MondialDay/
+CATEGORIES:Européenne
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-xp3bhm@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251119
+DTEND;VALUE=DATE:20251120
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=19
+SUMMARY:Journée mondiale des toilettes
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-7sbo5c@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251119
+DTEND;VALUE=DATE:20251120
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=19
+SUMMARY:Journée internationale des hommes
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-jz7y7j@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251120
+DTEND;VALUE=DATE:20251121
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=20
+SUMMARY:Journée mondiale de l’enfance
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-9jw6wi@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251120
+DTEND;VALUE=DATE:20251121
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=20
+SUMMARY:Journée du souvenir trans
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-10gvxji@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251121
+DTEND;VALUE=DATE:20251122
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la télévision
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-8nekng@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251125
+DTEND;VALUE=DATE:20251126
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=25
+SUMMARY:Journée internationale pour l’élimination de la violence à l
+ ’égard des femmes
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-vfj4en@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251126
+DTEND;VALUE=DATE:20251127
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=26
+SUMMARY:Journée mondiale de l’olivier
+DESCRIPTION:Mondiale · officielle · UNESCO\nMondialDay : https://pascalgi
+ r.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1mh9m2o@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251129
+DTEND;VALUE=DATE:20251130
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=29
+SUMMARY:Journée internationale de solidarité avec le peuple palestinien
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1iytn9s@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251130
+DTEND;VALUE=DATE:20251201
+RRULE:FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=30
+SUMMARY:Journée du souvenir dédiée à toutes les victimes de la guerre c
+ himique
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-14kmzed@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251201
+DTEND;VALUE=DATE:20251202
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=1
+SUMMARY:Journée mondiale de lutte contre le sida
+DESCRIPTION:Mondiale · officielle · ONU / OMS\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1p1xf0r@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251202
+DTEND;VALUE=DATE:20251203
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=2
+SUMMARY:Journée internationale pour l’abolition de l’esclavage
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-jwe4lv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251203
+DTEND;VALUE=DATE:20251204
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=3
+SUMMARY:Journée internationale des personnes handicapées
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-r9kch@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251204
+DTEND;VALUE=DATE:20251205
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=4
+SUMMARY:Journée internationale des banques
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1rr9ubl@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251204
+DTEND;VALUE=DATE:20251205
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=4
+SUMMARY:Journée internationale du guépard
+DESCRIPTION:Internationale · populaire · Initiative populaire\nMondialDay
+  : https://pascalgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1av9phv@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=5
+SUMMARY:Journée internationale des volontaires
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-18tvvwq@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=5
+SUMMARY:Journée mondiale des sols
+DESCRIPTION:Mondiale · officielle · FAO\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1hue3f5@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=5
+SUMMARY:Journée nationale d’hommage aux morts pour la France pendant la 
+ guerre d’Algérie et les combats du Maroc et de la Tunisie
+DESCRIPTION:France · officielle · République française\nMondialDay : ht
+ tps://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1bv8iys@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251207
+DTEND;VALUE=DATE:20251208
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=7
+SUMMARY:Journée de l’aviation civile internationale
+DESCRIPTION:Internationale · officielle · OACI\nMondialDay : https://pasc
+ algir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-rpl7ew@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251209
+DTEND;VALUE=DATE:20251210
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=9
+SUMMARY:Journée internationale de la lutte contre la corruption
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-gkj6xw@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251209
+DTEND;VALUE=DATE:20251210
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=9
+SUMMARY:Journée internationale de commémoration des victimes du crime de 
+ génocide
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-19d3ljb@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251209
+DTEND;VALUE=DATE:20251210
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=9
+SUMMARY:Journée de la laïcité
+DESCRIPTION:France · officielle · Éducation nationale\nMondialDay : http
+ s://pascalgir.github.io/MondialDay/
+CATEGORIES:France
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-qsrbad@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251210
+DTEND;VALUE=DATE:20251211
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=10
+SUMMARY:Journée des droits de l’homme
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1ijcjw1@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251211
+DTEND;VALUE=DATE:20251212
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=11
+SUMMARY:Journée internationale de la montagne
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-5ev6tz@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251212
+DTEND;VALUE=DATE:20251213
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=12
+SUMMARY:Journée internationale de la couverture sanitaire universelle
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-3rnv5y@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251212
+DTEND;VALUE=DATE:20251213
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=12
+SUMMARY:Journée internationale de la neutralité
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-14qwwi2@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251218
+DTEND;VALUE=DATE:20251219
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=18
+SUMMARY:Journée internationale des migrants
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1nl0h8b@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251218
+DTEND;VALUE=DATE:20251219
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=18
+SUMMARY:Journée de la langue arabe aux Nations Unies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-x9nbhr@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251220
+DTEND;VALUE=DATE:20251221
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=20
+SUMMARY:Journée internationale de la solidarité humaine
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1als35@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251221
+DTEND;VALUE=DATE:20251222
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=21
+SUMMARY:Journée mondiale de la méditation
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-deww2t@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251221
+DTEND;VALUE=DATE:20251222
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=21
+SUMMARY:Journée mondiale du basketball
+DESCRIPTION:Mondiale · officielle · ONU\nMondialDay : https://pascalgir.g
+ ithub.io/MondialDay/
+CATEGORIES:Mondiale
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:md-1dsvkif@mondialday
+DTSTAMP:20261113T094721Z
+DTSTART;VALUE=DATE:20251227
+DTEND;VALUE=DATE:20251228
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=27
+SUMMARY:Journée internationale de la préparation aux épidémies
+DESCRIPTION:Internationale · officielle · ONU\nMondialDay : https://pasca
+ lgir.github.io/MondialDay/
+CATEGORIES:Internationale
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

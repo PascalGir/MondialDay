@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MondialDay · Chaque jour sa journée</title>
+<meta name="description" content="Les journées mondiales, internationales, européennes et nationales (France, Suisse), à consulter et à ajouter à son agenda.">
+<meta name="theme-color" content="#FFFDF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1A2C" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="icon-180.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root{
+  color-scheme: light dark;
+  --fond:#FFFDF8; --surface:#FFFFFF; --texte:#22223B; --doux:#5C5C7A; --trait:#EDE7DA; --trait-fort:#D9CFBA;
+  --m:#C94444; --i:#13786E; --e:#9A6200; --n:#5B4BD5; --accent:#5B4BD5; --sur-accent:#FFFFFF;
+  --m-bg:#FDE4E4; --m-tx:#8E2424; --i-bg:#DDF4F1; --i-tx:#0E5C54; --e-bg:#FCEFD2; --e-tx:#6B4500; --n-bg:#ECE9FD; --n-tx:#3B2F9E;
+  --c1:#E85D5D; --c2:#F2B33D; --c3:#1FA89A; --c4:#6C5CE7;
+  --rayon:14px; --pastille:999px;
+  --police: ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --fond:#1B1A2C; --surface:#24233A; --texte:#F2F0FA; --doux:#B9B7CC; --trait:#34324F; --trait-fort:#4A4770;
+    --accent:#A99BFF; --sur-accent:#1B1A2C;
+    --m-bg:#3E2230; --m-tx:#FFC9C9; --i-bg:#173A3C; --i-tx:#9FEDE2; --e-bg:#3D3220; --e-tx:#FFDA8A; --n-bg:#2E2A55; --n-tx:#CFC8FF;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fond);color:var(--texte);font-family:var(--police);font-size:16px;line-height:1.5}
+.page{max-width:760px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top)) calc(18px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(18px + env(safe-area-inset-left))}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* En-tête */
+.marque{display:flex;align-items:center;gap:10px;margin:0;font-size:1rem;font-weight:700;letter-spacing:.01em}
+.marque small{font-weight:500;color:var(--doux)}
+.points{display:inline-grid;grid-template-columns:repeat(2,9px);gap:3px}
+.points span{width:9px;height:9px;border-radius:50%}
+.p1{background:var(--c1)}.p2{background:var(--c2)}.p3{background:var(--c3)}.p4{background:var(--c4)}
+.hero{position:relative;padding:28px 0 8px}
+.grande-date{position:relative;margin:0 0 14px;font-size:clamp(2.4rem,9.6vw,3.8rem);font-weight:800;line-height:1;letter-spacing:-.025em}
+.grande-date::first-letter{text-transform:uppercase}
+.eclat{position:relative;display:inline-block;width:.62em;height:.8em;margin-left:.12em;vertical-align:top}
+.confetti{position:absolute;border-radius:50%;pointer-events:none}
+@media (prefers-reduced-motion:no-preference){
+  .confetti{animation:pop .6s cubic-bezier(.3,1.6,.5,1) both}
+  @keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+}
+.du-jour{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.du-jour li{display:flex;align-items:center;gap:12px;padding:12px 12px 12px 16px;background:var(--surface);border:1px solid var(--trait);border-radius:var(--rayon)}
+.du-jour .nom-jour{flex:1;font-size:1.12rem;font-weight:650;line-height:1.3}
+.du-jour .barre-type{width:6px;align-self:stretch;border-radius:3px;flex:none}
+.vide-jour{margin:0;color:var(--doux)}
+.lien-liste{display:inline-block;margin-top:12px;font-size:.95rem;color:var(--doux);text-underline-offset:3px}
+
+.prochains{margin-top:26px}
+.prochains h2{margin:0 0 8px;font-size:1.05rem;font-weight:750}
+.prochains .reste{margin:6px 0 0;font-size:.9rem;color:var(--doux)}
+.prochains ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.prochains li{display:grid;grid-template-columns:6.6rem 10px 1fr;gap:10px;align-items:baseline;padding:4px 0;font-size:.95rem}
+.prochains time{color:var(--doux);white-space:nowrap}
+.prochains .pt{width:9px;height:9px;border-radius:50%;transform:translateY(-1px)}
+
+/* Filtres */
+.filtres{margin-top:34px;padding:16px;border:1px dashed var(--trait-fort);border-radius:var(--rayon);display:grid;gap:14px}
+.recherche{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--trait-fort);border-radius:var(--pastille);padding:0 14px;min-height:46px}
+.recherche:focus-within{outline:3px solid var(--accent);outline-offset:1px}
+.recherche input{flex:1;border:0;background:none;outline:none;min-width:0;padding:10px 0;font-size:1rem}
+.recherche svg{color:var(--doux)}
+.types{display:flex;flex-wrap:wrap;gap:8px}
+.type{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:6px 14px 6px 10px;border-radius:var(--pastille);border:1.5px solid var(--trait-fort);background:transparent;cursor:pointer;font-size:.95rem;color:var(--doux)}
+.type .pt{width:12px;height:12px;border-radius:50%;border:2px solid currentColor}
+.type[aria-pressed="true"]{color:var(--tx);background:var(--bg);border-color:transparent}
+.type[aria-pressed="true"] .pt{background:var(--plein);border-color:var(--plein)}
+.type.t-M{--bg:var(--m-bg);--tx:var(--m-tx);--plein:var(--m)}
+.type.t-I{--bg:var(--i-bg);--tx:var(--i-tx);--plein:var(--i)}
+.type.t-E{--bg:var(--e-bg);--tx:var(--e-tx);--plein:var(--e)}
+.type.t-FR,.type.t-CH{--bg:var(--n-bg);--tx:var(--n-tx);--plein:var(--n)}
+.ligne{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.inter{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-size:.97rem}
+.inter input{appearance:none;width:44px;height:26px;border-radius:13px;background:var(--trait-fort);position:relative;cursor:pointer;margin:0;flex:none}
+.inter input::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .15s}
+.inter input:checked{background:var(--accent)}
+.inter input:checked::after{transform:translateX(18px)}
+select{min-height:38px;border-radius:10px;border:1px solid var(--trait-fort);background:var(--surface);padding:4px 10px}
+.annee{display:inline-flex;align-items:center;gap:2px;margin-left:auto}
+.annee strong{min-width:3.2rem;text-align:center;font-weight:750}
+.ico{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--doux);cursor:pointer;text-decoration:none}
+.ico:hover{background:var(--trait);color:var(--texte)}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:var(--pastille);border:1.5px solid var(--trait-fort);background:var(--surface);cursor:pointer;font-weight:650;text-decoration:none}
+.btn:hover{border-color:var(--doux)}
+.btn.primaire{background:var(--accent);color:var(--sur-accent);border-color:var(--accent)}
+.btn.primaire:hover{filter:brightness(1.08)}
+
+/* Liste */
+.mois{margin-top:30px}
+.mois h2{position:sticky;top:0;z-index:2;margin:0;padding:10px 0 8px;background:var(--fond);font-size:1.4rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:10px}
+.mois h2 span{font-size:.9rem;font-weight:500;color:var(--doux)}
+.liste{list-style:none;margin:0;padding:0}
+.j{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:12px 0;border-top:1px dashed var(--trait-fort)}
+.j:first-child{border-top:0}
+.puce{width:46px;min-height:46px;border-radius:12px;display:grid;place-items:center;align-content:center;color:#fff;background:var(--plein);line-height:1.05;text-align:center;padding:4px 2px}
+.puce b{font-size:1.15rem;font-weight:800}
+.puce small{font-size:.7rem;opacity:.95}
+.t-M{--plein:var(--m)}.t-I{--plein:var(--i)}.t-E{--plein:var(--e)}.t-FR,.t-CH{--plein:var(--n)}
+.nom{margin:0;font-size:1.03rem;font-weight:650;line-height:1.3}
+.meta{margin:5px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.84rem;color:var(--doux)}
+.pas{display:inline-flex;align-items:center;gap:4px;padding:1px 9px;border-radius:var(--pastille);font-weight:600}
+.pas.t-M{background:var(--m-bg);color:var(--m-tx)}.pas.t-I{background:var(--i-bg);color:var(--i-tx)}.pas.t-E{background:var(--e-bg);color:var(--e-tx)}.pas.t-FR,.pas.t-CH{background:var(--n-bg);color:var(--n-tx)}
+.pas.pop{background:transparent;border:1px solid var(--trait-fort);color:var(--doux);font-weight:500}
+.pas.off{background:transparent;border:1px solid currentColor;color:var(--texte);font-weight:600}
+.pas svg.i{width:13px;height:13px;stroke-width:3}
+.act{display:flex;gap:2px}
+.aujourdhui .puce{box-shadow:0 0 0 2px var(--fond),0 0 0 5px var(--c2)}
+.vide{margin:40px 0;text-align:center;color:var(--doux)}
+.vide p{margin:0 0 12px}
+
+/* Pied */
+footer{margin-top:44px;padding-top:18px;border-top:1px dashed var(--trait-fort);font-size:.88rem;color:var(--doux)}
+footer p{margin:0 0 8px}
+.lien{background:none;border:0;padding:0;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* Fenêtres */
+dialog{width:min(560px,calc(100% - 24px));max-height:calc(100% - 40px);border:0;border-radius:20px;padding:0;background:var(--surface);color:var(--texte);box-shadow:0 20px 60px rgba(20,18,40,.35)}
+dialog::backdrop{background:rgba(27,26,44,.55)}
+.fen{padding:22px 22px 24px}
+.fen header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.fen h2{margin:0;font-size:1.3rem;font-weight:800}
+.fen p{margin:0 0 12px}
+.bloc{padding:14px;border:1px solid var(--trait);border-radius:var(--rayon);margin-bottom:12px}
+.bloc h3{margin:0 0 4px;font-size:1.02rem}
+.bloc .actions{margin-top:10px}
+.aide{font-size:.9rem;color:var(--doux)}
+.aide summary{cursor:pointer;color:var(--texte);font-weight:600}
+.aide ul{padding-left:1.2rem;margin:8px 0 0}
+.version{border-top:1px solid var(--trait);padding:10px 0}
+.version summary{cursor:pointer;font-weight:700}
+.version summary span{font-weight:500;color:var(--doux)}
+.version ul{margin:8px 0 0;padding-left:1.2rem}
+.toast{white-space:nowrap;position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--texte);color:var(--fond);padding:10px 18px;border-radius:var(--pastille);font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.vu{opacity:1}
+@media (max-width:520px){
+  .annee{margin-left:0}
+  .j{gap:12px}
+  .prochains li{grid-template-columns:6.2rem 10px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <h1 class="marque"><span class="points" aria-hidden="true"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span></span><span id="nomSite">MondialDay</span> <small id="titreSite">Chaque jour sa journée</small></h1>
+    <div id="hero"></div>
+  </header>
+
+  <main>
+    <section class="filtres" aria-label="Filtres">
+      <label class="recherche"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Rechercher</span><input id="q" type="search" placeholder="Rechercher une journée ou un organisme" autocomplete="off"></label>
+      <div class="types" role="group" aria-label="Types de journées" id="types"></div>
+      <div class="ligne">
+        <label class="inter"><input type="checkbox" id="offic"> Officielles seulement</label>
+        <label><span class="sr">Mois</span><select id="mois"></select></label>
+        <div class="annee"><button class="ico" id="anPrec" aria-label="Année précédente"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><strong id="an" aria-live="polite"></strong><button class="ico" id="anSuiv" aria-label="Année suivante"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div>
+      </div>
+      <div class="actions">
+        <button class="btn primaire" id="btnExport"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg><span id="txtExport">Exporter la sélection</span></button>
+        <button class="btn" id="btnAbo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4"/><path d="M9 15.5l2 2 4-4"/></svg>S’abonner au calendrier</button>
+      </div>
+    </section>
+
+    <div id="liste" aria-live="polite"></div>
+  </main>
+
+  <footer>
+    <p>Liste établie d’après les journées proclamées par les Nations Unies et ses agences, les institutions européennes, la France et la Suisse, complétée de journées populaires. Certaines dates, fixées chaque année par leurs organisateurs, peuvent varier : vérifiez auprès de l’organisme. Pour aller plus loin : <a href="https://www.un.org/fr/observances/list-days-weeks" target="_blank" rel="noopener">liste de l’ONU</a> · <a href="https://fr.wikipedia.org/wiki/Journ%C3%A9e_internationale" target="_blank" rel="noopener">Wikipédia</a>.</p>
+    <p><span id="piedNom">MondialDay</span> · version <span id="numVersion">1.0</span> · <button class="lien" id="btnNouv">nouveautés</button></p>
+  </footer>
+</div>
+
+<dialog id="dlgExport" aria-labelledby="tExport"><div class="fen">
+  <header><h2 id="tExport">Exporter la sélection</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <p id="resumeExport"></p>
+  <p class="aide">Le fichier .ics s’importe dans Google Agenda, Outlook ou Calendrier (Apple). Chaque journée y revient automatiquement chaque année.</p>
+  <p><label class="inter"><input type="checkbox" id="rappel"> <span id="txtRappel">Rappel la veille</span></label></p>
+  <div class="actions"><button class="btn primaire" id="btnTelecharger"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg>Télécharger le fichier .ics</button></div>
+</div></dialog>
+
+<dialog id="dlgAbo" aria-labelledby="tAbo"><div class="fen">
+  <header><h2 id="tAbo">S’abonner au calendrier</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <p>Votre agenda suit ce calendrier et se met à jour tout seul quand la liste évolue.</p>
+  <div id="abos"></div>
+  <details class="aide"><summary>Comment faire selon mon agenda</summary><ul>
+    <li>iPhone, iPad, Mac : touchez « S’abonner », puis confirmez.</li>
+    <li>Google Agenda (sur ordinateur) : « Autres agendas » → « + » → « À partir de l’URL », puis collez l’adresse copiée.</li>
+    <li>Outlook : « Ajouter un calendrier » → « S’abonner à partir du web », puis collez l’adresse copiée.</li>
+  </ul></details>
+</div></dialog>
+
+<dialog id="dlgNouv" aria-labelledby="tNouv"><div class="fen">
+  <header><h2 id="tNouv">Nouveautés</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <div id="nouv"></div>
+</div></dialog>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="config.js?v=1.0"></script>
+<script src="journees.js?v=1.0"></script>
+<script src="nouveautes.js?v=1.0"></script>
+
+<!-- Moteur de dates et d'export .ics (sans accès à la page : réutilisé par outils/generer-ics.js) -->
+<script id="moteur">
+(function (racine) {
+  var JOURS = { SU: 0, MO: 1, TU: 2, WE: 3, TH: 4, FR: 5, SA: 6 };
+  var TYPES = { M: "Mondiale", I: "Internationale", E: "Européenne", FR: "France", CH: "Suisse" };
+
+  function utc(a, m, j) { return new Date(Date.UTC(a, m - 1, j)); }
+  function ajoute(d, n) { return new Date(d.getTime() + n * 86400000); }
+  function dernierJour(a, m) { return new Date(Date.UTC(a, m, 0)).getUTCDate(); }
+
+  function paques(a) {
+    var b = a % 19, c = Math.floor(a / 100), e = a % 100, f = Math.floor(c / 4), g = c % 4,
+        h = Math.floor((c + 8) / 25), i = Math.floor((c - h + 1) / 3),
+        k = (19 * b + c - f - i + 15) % 30, l = Math.floor(e / 4), n = e % 4,
+        o = (32 + 2 * g + 2 * l - k - n) % 7, p = Math.floor((b + 11 * k + 22 * o) / 451),
+        mois = Math.floor((k + o - 7 * p + 114) / 31), jour = ((k + o - 7 * p + 114) % 31) + 1;
+    return utc(a, mois, jour);
+  }
+
+  function lire(r) {
+    var m;
+    if (r === "MERES_FR") return { k: "meres", dur: 1 };
+    if ((m = /^(\d\d)-(\d\d)(?:\+(\d+))?$/.exec(r))) return { k: "fixe", mo: +m[1], j: +m[2], dur: +(m[3] || 1) };
+    if ((m = /^(\d\d)-FIN$/.exec(r))) return { k: "fin", mo: +m[1], dur: 1 };
+    if ((m = /^(\d\d)-(L|[1-5])(MO|TU|WE|TH|FR|SA|SU)(?:\+(\d+))?$/.exec(r))) return { k: "rang", mo: +m[1], n: m[2], wd: m[3], dur: +(m[4] || 1) };
+    if ((m = /^(\d\d)-(MO|TU|WE|TH|FR|SA|SU)~(\d\d)$/.exec(r))) return { k: "proche", mo: +m[1], wd: m[2], j: +m[3], dur: 1 };
+    throw new Error("Règle inconnue : " + r);
+  }
+
+  function occurrence(r, a) {
+    var x = lire(r), d;
+    if (x.k === "fixe") d = utc(a, x.mo, x.j);
+    else if (x.k === "fin") d = utc(a, x.mo, dernierJour(a, x.mo));
+    else if (x.k === "rang") {
+      var cible = JOURS[x.wd];
+      if (x.n === "L") { var dj = dernierJour(a, x.mo); var w = utc(a, x.mo, dj).getUTCDay(); d = utc(a, x.mo, dj - ((w - cible + 7) % 7)); }
+      else { var w1 = utc(a, x.mo, 1).getUTCDay(); d = utc(a, x.mo, 1 + ((cible - w1 + 7) % 7) + 7 * (+x.n - 1)); }
+    } else if (x.k === "proche") {
+      for (var j = x.j - 3; j <= x.j + 3; j++) if (utc(a, x.mo, j).getUTCDay() === JOURS[x.wd]) d = utc(a, x.mo, j);
+    } else if (x.k === "meres") {
+      var pentecote = ajoute(paques(a), 49), fin = dernierJour(a, 5), wf = utc(a, 5, fin).getUTCDay();
+      d = utc(a, 5, fin - wf);
+      if (d.getTime() === pentecote.getTime()) d = ajoute(d, 7);
+    }
+    return { debut: d, fin: ajoute(d, x.dur - 1), dur: x.dur };
+  }
+
+  function rrule(r) {
+    var x = lire(r);
+    if (x.k === "fixe") return "FREQ=YEARLY;BYMONTH=" + x.mo + ";BYMONTHDAY=" + x.j;
+    if (x.k === "fin") return "FREQ=YEARLY;BYMONTH=" + x.mo + ";BYMONTHDAY=-1";
+    if (x.k === "rang") return "FREQ=YEARLY;BYMONTH=" + x.mo + ";BYDAY=" + (x.n === "L" ? "-1" : x.n) + x.wd;
+    if (x.k === "proche") { var l = []; for (var j = x.j - 3; j <= x.j + 3; j++) l.push(j); return "FREQ=YEARLY;BYMONTH=" + x.mo + ";BYDAY=" + x.wd + ";BYMONTHDAY=" + l.join(","); }
+    return null;
+  }
+
+  function hache(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return h.toString(36); }
+  function idJ(j) { return "md-" + hache(j[0] + "|" + j[1]); }
+  function dIcs(d) { return d.toISOString().slice(0, 10).replace(/-/g, ""); }
+  function echappe(t) { return String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+  function plie(ligne) {
+    var sortie = [], cour = "", taille = 0, limite = 75;
+    for (var c of ligne) {
+      var o = new TextEncoder().encode(c).length;
+      if (taille + o > limite) { sortie.push(cour); cour = " "; taille = 1; limite = 75; }
+      cour += c; taille += o;
+    }
+    sortie.push(cour);
+    return sortie.join("\r\n");
+  }
+
+  function evenement(j, debut, dur, uid, rr, o) {
+    var l = ["BEGIN:VEVENT", "UID:" + uid + "@mondialday", "DTSTAMP:" + o.horodatage,
+      "DTSTART;VALUE=DATE:" + dIcs(debut), "DTEND;VALUE=DATE:" + dIcs(ajoute(debut, dur))];
+    if (rr) l.push("RRULE:" + rr);
+    l.push("SUMMARY:" + echappe(j[1]),
+      "DESCRIPTION:" + echappe(TYPES[j[2]] + " · " + (j[3] ? "officielle" : "populaire") + " · " + j[4] + "\nMondialDay : " + o.url),
+      "CATEGORIES:" + echappe(TYPES[j[2]]), "TRANSP:TRANSPARENT");
+    if (o.rappel) {
+      var h = 24 - o.heureRappel;
+      l.push("BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + echappe("Demain : " + j[1]), "TRIGGER:-PT" + h + "H", "END:VALARM");
+    }
+    l.push("END:VEVENT");
+    return l;
+  }
+
+  function ics(liste, o) {
+    var l = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MondialDay//Journees//FR", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+      "X-WR-CALNAME:" + echappe(o.nom), "X-WR-CALDESC:" + echappe("Journées mondiales, internationales et nationales — " + o.url),
+      "REFRESH-INTERVAL;VALUE=DURATION:P1D", "X-PUBLISHED-TTL:P1D"];
+    liste.forEach(function (j) {
+      var rr = rrule(j[0]);
+      if (rr) { var oc = occurrence(j[0], o.anneeDepart); l = l.concat(evenement(j, oc.debut, oc.dur, idJ(j), rr, o)); }
+      else for (var a = o.anneeDepart; a < o.anneeDepart + o.anneesCalculees; a++) {
+        var oc2 = occurrence(j[0], a); l = l.concat(evenement(j, oc2.debut, oc2.dur, idJ(j) + "-" + a, null, o));
+      }
+    });
+    l.push("END:VCALENDAR");
+    return l.map(plie).join("\r\n") + "\r\n";
+  }
+
+  racine.MD = { TYPES: TYPES, occurrence: occurrence, rrule: rrule, ics: ics, utc: utc, ajoute: ajoute };
+})(typeof window !== "undefined" ? window : globalThis);
+</script>
+
+<script>
+(function () {
+  "use strict";
+  var C = window.CONFIG, J = window.JOURNEES, MD = window.MD, T = MD.TYPES;
+  var VERSION = "1.0";
+  var MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  var MOIS_C = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+  var ORDRE = ["M","I","E","FR","CH"];
+  var LIB_FILTRE = { M: "Mondiales", I: "Internationales", E: "Européennes", FR: "France", CH: "Suisse" };
+  var ICO_CAL = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4M12 13v5m-2.5-2.5h5"/></svg>';
+  var ICO_INFO = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>';
+  var ICO_OK = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
+  var $ = function (s) { return document.querySelector(s); };
+
+  var maintenant = new Date();
+  var auj = MD.utc(maintenant.getFullYear(), maintenant.getMonth() + 1, maintenant.getDate());
+  var etat = { an: auj.getUTCFullYear(), q: "", types: { M: 1, I: 1, E: 1, FR: 1, CH: 1 }, offic: false, mois: "tous" };
+
+  function esc(t) { return String(t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " "); }
+  var fmtLong = new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  var fmtCourt = new Intl.DateTimeFormat("fr-FR", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+  function iso(d) { return d.toISOString().slice(0, 10); }
+
+  function occurrences(an) {
+    return J.map(function (j, i) {
+      var o = MD.occurrence(j[0], an);
+      return { i: i, j: j, debut: o.debut, fin: o.fin, dur: o.dur, recherche: norm(j[1] + " " + j[4] + " " + T[j[2]]) };
+    }).sort(function (a, b) { return a.debut - b.debut || b.j[3] - a.j[3] || a.j[1].localeCompare(b.j[1], "fr"); });
+  }
+  function couvre(o, d) { return d >= o.debut && d <= o.fin; }
+
+  function pastilles(j) {
+    return '<span class="pas t-' + j[2] + '">' + esc(T[j[2]]) + '</span>' +
+      (j[3] ? '<span class="pas off">' + ICO_OK + 'Officielle</span>' : '<span class="pas pop">Populaire</span>') +
+      '<span>' + esc(j[4]) + '</span>';
+  }
+  function boutonAjout(i, nom) { return '<button class="ico" data-ajout="' + i + '" aria-label="Ajouter « ' + esc(nom) + ' » à mon agenda" title="Ajouter à mon agenda">' + ICO_CAL + '</button>'; }
+
+  /* En-tête : aujourd'hui et prochains jours */
+  function rendreHero() {
+    var tous = occurrences(auj.getUTCFullYear()).concat(occurrences(auj.getUTCFullYear() + 1));
+    var duJour = tous.filter(function (o) { return couvre(o, auj); });
+    var mots = fmtLong.format(auj).split(" "), dernier = mots.pop();
+    var h = '<p class="grande-date"><span class="sr">Aujourd’hui, </span>' + esc(mots.join(" ")) + ' <span style="white-space:nowrap">' + esc(dernier) + confettis() + '</span></p>';
+    if (duJour.length) {
+      h += '<ul class="du-jour">' + duJour.map(function (o) {
+        return '<li><span class="barre-type t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><div style="flex:1"><div class="nom-jour">' + esc(o.j[1]) + '</div><p class="meta">' + pastilles(o.j) + '</p></div>' + boutonAjout(o.i, o.j[1]) + '</li>';
+      }).join("") + '</ul>';
+    } else {
+      var proch = tous.find(function (o) { return o.debut > auj; });
+      h += '<p class="vide-jour">Aucune journée particulière aujourd’hui.' + (proch ? ' La prochaine : ' + esc(proch.j[1]) + ', ' + esc(fmtLong.format(proch.debut)) + '.' : '') + '</p>';
+    }
+    h += '<a class="lien-liste" href="#mois-' + (auj.getUTCMonth() + 1) + '" id="versMois">Voir ' + MOIS[auj.getUTCMonth()] + ' dans la liste</a>';
+    var limite = MD.ajoute(auj, C.joursAVenir);
+    var vus = {};
+    var suite = tous.filter(function (o) { if (o.debut > auj && o.debut <= limite && !vus[o.i]) { vus[o.i] = 1; return true; } return false; });
+    var reste = Math.max(0, suite.length - 8); suite = suite.slice(0, 8);
+    if (suite.length) {
+      h += '<section class="prochains" aria-labelledby="tProch"><h2 id="tProch">Ces prochains jours</h2><ol>' + suite.map(function (o) {
+        return '<li><time datetime="' + iso(o.debut) + '">' + esc(fmtCourt.format(o.debut)) + '</time><span class="pt t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><span>' + esc(o.j[1]) + '</span></li>';
+      }).join("") + '</ol>' + (reste ? '<p class="reste">Et ' + reste + (reste > 1 ? " autres" : " autre") + ' dans la liste.</p>' : "") + '</section>';
+    }
+    $("#hero").innerHTML = h;
+    $("#versMois").addEventListener("click", function (e) {
+      e.preventDefault();
+      if (etat.an !== auj.getUTCFullYear() || etat.mois !== "tous") { etat.an = auj.getUTCFullYear(); etat.mois = "tous"; $("#mois").value = "tous"; rendreListe(); }
+      var cible = document.getElementById("mois-" + (auj.getUTCMonth() + 1));
+      if (cible) cible.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    });
+  }
+  function confettis() {
+    var pos = [[0, 10, .2, "c1"], [52, 0, .13, "c2"], [30, 42, .15, "c3"], [70, 55, .1, "c4"], [8, 78, .09, "c2"]];
+    return '<span class="eclat" aria-hidden="true">' + pos.map(function (p, k) {
+      return '<span class="confetti" style="left:' + p[0] + '%;top:' + p[1] + '%;width:' + p[2] + 'em;height:' + p[2] + 'em;background:var(--' + p[3] + ');animation-delay:' + (k * 70) + 'ms"></span>';
+    }).join("") + '</span>';
+  }
+
+  /* Liste filtrée */
+  function selection() {
+    var q = norm(etat.q.trim());
+    return occurrences(etat.an).filter(function (o) {
+      if (!etat.types[o.j[2]]) return false;
+      if (etat.offic && !o.j[3]) return false;
+      if (etat.mois !== "tous" && o.debut.getUTCMonth() + 1 !== +etat.mois) return false;
+      if (q && q.split(/\s+/).some(function (m) { return o.recherche.indexOf(m) < 0; })) return false;
+      return true;
+    });
+  }
+  function rendreListe() {
+    $("#an").textContent = etat.an;
+    var sel = selection();
+    $("#txtExport").textContent = "Exporter la sélection (" + sel.length + ")";
+    $("#btnExport").disabled = false;
+    if (!sel.length) {
+      $("#liste").innerHTML = '<div class="vide"><p>Aucune journée ne correspond à ces filtres.</p><button class="btn" id="raz">Réinitialiser les filtres</button></div>';
+      $("#raz").addEventListener("click", reinitialiser);
+      return;
+    }
+    var groupes = {};
+    sel.forEach(function (o) { var m = o.debut.getUTCMonth() + 1; (groupes[m] = groupes[m] || []).push(o); });
+    $("#liste").innerHTML = Object.keys(groupes).map(function (m) {
+      var g = groupes[m];
+      return '<section class="mois" id="mois-' + m + '" aria-labelledby="h-mois-' + m + '"><h2 id="h-mois-' + m + '">' + MOIS[m - 1].replace(/^./, function (c) { return c.toUpperCase(); }) + ' ' + etat.an + ' <span>' + g.length + (g.length > 1 ? " journées" : " journée") + '</span></h2><ul class="liste">' +
+        g.map(function (o) {
+          var j = o.j, jour = o.debut.getUTCDate(), plage = o.dur > 1 ? jour + "–" + o.fin.getUTCDate() : jour;
+          var classe = "j t-" + j[2] + (couvre(o, auj) ? " aujourdhui" : "");
+          var wiki = "https://fr.wikipedia.org/w/index.php?search=" + encodeURIComponent(j[1]);
+          return '<li class="' + classe + '"><time class="puce" datetime="' + iso(o.debut) + '"><b>' + plage + '</b><small>' + MOIS_C[o.debut.getUTCMonth()] + '</small></time>' +
+            '<div><h3 class="nom">' + esc(j[1]) + '</h3><span class="sr">' + esc(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + esc(fmtLong.format(o.fin)) : "") + '</span><p class="meta">' + pastilles(j) + '</p></div>' +
+            '<div class="act"><a class="ico" href="' + wiki + '" target="_blank" rel="noopener" aria-label="En savoir plus sur « ' + esc(j[1]) + ' » (Wikipédia)" title="En savoir plus">' + ICO_INFO + '</a>' + boutonAjout(o.i, j[1]) + '</div></li>';
+        }).join("") + '</ul></section>';
+    }).join("");
+  }
+
+  /* Filtres */
+  function construireFiltres() {
+    $("#types").innerHTML = ORDRE.map(function (t) {
+      return '<button class="type t-' + t + '" data-type="' + t + '" aria-pressed="true"><span class="pt" aria-hidden="true"></span>' + LIB_FILTRE[t] + '</button>';
+    }).join("");
+    $("#mois").innerHTML = '<option value="tous">Tous les mois</option>' + MOIS.map(function (m, k) { return '<option value="' + (k + 1) + '">' + m.replace(/^./, function (c) { return c.toUpperCase(); }) + '</option>'; }).join("");
+    $("#types").addEventListener("click", function (e) {
+      var b = e.target.closest(".type"); if (!b) return;
+      var t = b.dataset.type; etat.types[t] = etat.types[t] ? 0 : 1;
+      b.setAttribute("aria-pressed", etat.types[t] ? "true" : "false"); rendreListe();
+    });
+    $("#q").addEventListener("input", function (e) { etat.q = e.target.value; rendreListe(); });
+    $("#offic").addEventListener("change", function (e) { etat.offic = e.target.checked; rendreListe(); });
+    $("#mois").addEventListener("change", function (e) { etat.mois = e.target.value; rendreListe(); });
+    $("#anPrec").addEventListener("click", function () { etat.an--; rendreListe(); });
+    $("#anSuiv").addEventListener("click", function () { etat.an++; rendreListe(); });
+  }
+  function reinitialiser() {
+    etat.q = ""; etat.offic = false; etat.mois = "tous"; ORDRE.forEach(function (t) { etat.types[t] = 1; });
+    $("#q").value = ""; $("#offic").checked = false; $("#mois").value = "tous";
+    document.querySelectorAll(".type").forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
+    rendreListe();
+  }
+
+  /* Export .ics */
+  function options(rappel, nom) {
+    return { nom: nom, url: C.urlSite, rappel: rappel, heureRappel: C.heureRappel, anneeDepart: C.anneeDepart, anneesCalculees: C.anneesCalculees,
+      horodatage: new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "") };
+  }
+  function telecharger(texte, fichier) {
+    var blob = new Blob([texte], { type: "text/calendar;charset=utf-8" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = fichier;
+    document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  function nomFichier(t) { return norm(t).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60) + ".ics"; }
+  function toast(t) { var e = $("#toast"); e.textContent = t; e.classList.add("vu"); clearTimeout(toast.t); toast.t = setTimeout(function () { e.classList.remove("vu"); }, 2400); }
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-ajout]"); if (!b) return;
+    var j = J[+b.dataset.ajout];
+    telecharger(MD.ics([j], options(C.rappelParDefaut, j[1])), nomFichier(j[1]));
+    toast("Fichier prêt pour votre agenda");
+  });
+  $("#btnExport").addEventListener("click", function () {
+    var n = selection().length;
+    $("#resumeExport").textContent = n + (n > 1 ? " journées sélectionnées" : " journée sélectionnée") + " avec les filtres actuels.";
+    $("#dlgExport").showModal();
+  });
+  $("#btnTelecharger").addEventListener("click", function () {
+    var sel = selection().map(function (o) { return o.j; });
+    var nom = C.nomSite + (etat.offic ? " · officielles" : "");
+    telecharger(MD.ics(sel, options($("#rappel").checked, nom)), "mondialday-selection.ics");
+    $("#dlgExport").close(); toast("Fichier .ics téléchargé");
+  });
+
+  /* Abonnement */
+  function construireAbos() {
+    var base = C.urlSite.replace(/\/?$/, "/");
+    var nbOff = J.filter(function (j) { return j[3]; }).length;
+    var abos = [["calendrier.ics", "Toutes les journées", J.length], ["officielles.ics", "Seulement les officielles", nbOff]];
+    $("#abos").innerHTML = abos.map(function (a) {
+      var https = base + a[0], webcal = https.replace(/^https?:/, "webcal:");
+      return '<div class="bloc"><h3>' + a[1] + '</h3><p class="aide">' + a[2] + ' journées, répétées chaque année.</p><div class="actions"><a class="btn primaire" href="' + webcal + '">S’abonner</a><button class="btn" data-copie="' + https + '">Copier l’adresse</button></div></div>';
+    }).join("");
+    $("#abos").addEventListener("click", function (e) {
+      var b = e.target.closest("[data-copie]"); if (!b) return;
+      var url = b.dataset.copie;
+      (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { toast("Adresse copiée"); }, function () { window.prompt("Adresse du calendrier :", url); });
+    });
+  }
+  $("#btnAbo").addEventListener("click", function () { $("#dlgAbo").showModal(); });
+
+  /* Nouveautés */
+  function construireNouv() {
+    $("#nouv").innerHTML = (window.NOUVEAUTES || []).map(function (v, k) {
+      return '<details class="version"' + (k === 0 ? " open" : "") + '><summary>Version ' + esc(v.version) + ' <span>· ' + esc(v.type) + ' · ' + esc(new Date(v.date + "T12:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })) + '</span></summary><ul>' +
+        v.points.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></details>";
+    }).join("");
+  }
+  $("#btnNouv").addEventListener("click", function () { $("#dlgNouv").showModal(); });
+
+  document.querySelectorAll("dialog").forEach(function (d) {
+    d.addEventListener("click", function (e) { if (e.target === d || e.target.closest("[data-fermer]")) d.close(); });
+  });
+
+  /* Démarrage */
+  $("#nomSite").textContent = C.nomSite; $("#piedNom").textContent = C.nomSite; $("#titreSite").textContent = C.titre;
+  $("#numVersion").textContent = VERSION; $("#rappel").checked = !!C.rappelParDefaut;
+  $("#txtRappel").textContent = "Rappel la veille à " + C.heureRappel + " h";
+  construireFiltres(); construireAbos(); construireNouv(); rendreHero(); rendreListe();
+
+  if ("serviceWorker" in navigator && /^https:|^http:\/\/localhost/.test(location.href)) navigator.serviceWorker.register("sw.js").catch(function () {});
+})();
+</script>
+</body>
+</html>
