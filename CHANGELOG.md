@@ -1,5 +1,15 @@
 # Changelog — MondialDay
 
+## 1.3 — 2026-11-17 — Simplification, fiche d'une journée, partage
+
+- Simplification (EV-06 à EV-09) : un seul bouton « Ajouter à mon agenda (N) » ouvrant `#dlgAgenda` (téléchargement .ics de la sélection avec rappel, puis abonnements) à la place de « Exporter » et « S'abonner » ; filtres par type dans `<details id="plus">` « Plus de filtres » avec compteur des types masqués ; menu des mois supprimé (`etat.mois` retiré, doublon de l'accordéon) ; lignes : type + « ✓ organisme » pour les officielles seulement, plus de pastille « Populaire » ni d'organisme des journées populaires, plus d'icône « en savoir plus ».
+- Fiche d'une journée (`#dlgJour`, nom cliquable `data-jour="i|an"`) : date complète, type, officielle/populaire, organisme, boutons Agenda, Partager (EV-14 : `navigator.share`, sinon copie du texte et du lien) et En savoir plus. Lien `#j-<nom>` : ouvre la fiche au chargement.
+- EV-15 : mots recherchés surlignés (`<mark>`, insensible aux accents). EV-16 : bouton flottant « Rechercher » quand les filtres sont hors de vue (IntersectionObserver). EV-17 : type écrit en toutes lettres dans « Les 14 prochains jours » (`.tag`), à la place de la seule pastille de couleur.
+- EV-11 : bandeau de récupération en `<details>` sur une ligne (source et prochaine mise à jour au toucher). EV-12 : message « Nouvelle version disponible — Actualiser » sur `controllerchange` quand une version précédente était installée ; vérification au retour sur la page.
+- EV-10 : balises Open Graph / Twitter, image `apercu.png` (1200 × 630, charte Confettis).
+- EV-13 : journées suisses ajoutées (Saint-Berchtold, Journée des malades, Journée suisse de la lecture à voix haute, Grève féministe) : 9 au total.
+- EV-05 : `rapport-mise-a-jour.md` écrit à chaque récupération réussie (nouvelles, retirées, dates corrigées, toutes les journées venant de la source, mode d'emploi de `journeesExclues`) ; ticket GitHub « Journées à vérifier » ouvert s'il y a du nouveau (`issues: write`). Premier rapport : les 63 journées de la récupération du 17.11.
+
 ## 1.2 — 2026-11-17 — Lecture fiable de Wikipédia, tests, version unique
 
 - Cause de l'échec du 13.11 (1 journée reconnue) : les dates de la page sont des modèles à un paramètre (`{{date|1 janvier}}`), effacés par le nettoyage ; et les références `<ref name="calendrier" />` étaient prises pour des références ouvrantes, ce qui supprimait des blocs entiers de la page.

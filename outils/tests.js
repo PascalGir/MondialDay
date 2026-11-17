@@ -93,6 +93,8 @@ const auto = d => { const c = {}; new Function("window", fs.readFileSync(path.jo
 test("récupération réussie : date notée, ajouts écrits", () => {
   const d = copie(); egal(lancer(d, SOURCE_TEST, "2026-12-01"), 0, "code de sortie");
   const a = auto(d); egal(a.derniereRecuperation, "2026-12-01"); egal(a.derniereTentative.statut, "réussie"); vrai(a.ajouts.length >= 20, "ajouts");
+  const rapport = fs.readFileSync(path.join(d, "rapport-mise-a-jour.md"), "utf8");
+  vrai(/Journées à vérifier/.test(rapport) && /chat noir/.test(rapport) && /journeesExclues/.test(rapport), "rapport incomplet");
   egal(lancer(d, SOURCE_TEST, "2027-01-01"), 0, "2e passage"); egal(auto(d).ajouts, a.ajouts, "2e passage identique");
 });
 test("source illisible : erreur, données et date de dernière réussite conservées", () => {

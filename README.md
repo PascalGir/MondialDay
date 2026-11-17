@@ -13,6 +13,8 @@ Adresse : https://pascalgir.github.io/MondialDay/
 - `outils/mise-a-jour.js` et `.github/workflows/mise-a-jour.yml` : mise à jour automatique le 1er de chaque mois depuis Wikipédia (lancement manuel possible dans l’onglet Actions → « Run workflow »).
 - `outils/tests.js` : tests automatiques (`node outils/tests.js`), lancés aussi avant chaque mise à jour mensuelle.
 - `outils/version.js` : reporte le numéro de version de `config.js` dans la page et le cache hors ligne.
+- `rapport-mise-a-jour.md` : journées à vérifier après chaque mise à jour automatique (un ticket GitHub est aussi ouvert) ; pour écarter une journée, l’ajouter à `journeesExclues` dans `config.js`.
+- `apercu.png` : image affichée quand le lien du site est partagé.
 - `nouveautes.js` : historique public affiché dans la fenêtre « Nouveautés ».
 - `calendrier.ics`, `officielles.ics` : calendriers à suivre par abonnement, générés par `node outils/generer-ics.js`.
 - `sw.js` : consultation hors ligne.

@@ -7,6 +7,17 @@
 <meta name="description" content="Les journées mondiales, internationales, européennes et nationales (France, Suisse), à consulter et à ajouter à son agenda.">
 <meta name="theme-color" content="#FFFDF8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1B1A2C" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MondialDay">
+<meta property="og:title" content="MondialDay · Chaque jour sa journée">
+<meta property="og:description" content="Les journées mondiales, internationales, européennes, France et Suisse : la liste, les 14 prochains jours, et l’ajout à votre agenda.">
+<meta property="og:url" content="https://pascalgir.github.io/MondialDay/">
+<meta property="og:image" content="https://pascalgir.github.io/MondialDay/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MondialDay, chaque jour sa journée : pastilles de couleur et liste des journées">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="icon-180.png">
 <link rel="apple-touch-icon" href="icon-180.png">
 <style>
@@ -61,12 +72,22 @@ svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke
 .prochains{margin-top:26px}
 .prochains h2{margin:0 0 8px;font-size:1.05rem;font-weight:750}
 .prochains ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
-.prochains li{display:grid;grid-template-columns:6.6rem 10px 1fr;gap:10px;align-items:baseline;padding:4px 0;font-size:.95rem}
+.prochains li{display:grid;grid-template-columns:6.6rem 1fr;gap:10px;align-items:baseline;padding:4px 0;font-size:.95rem}
 .prochains time{color:var(--doux);white-space:nowrap}
-.prochains .pt{width:9px;height:9px;border-radius:50%;transform:translateY(-1px)}
+.tag{display:inline-flex;align-items:center;gap:5px;margin-left:6px;font-size:.78rem;font-weight:650;color:var(--tx);white-space:nowrap}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--plein)}
+.tag.t-M{--tx:var(--m-tx)}.tag.t-I{--tx:var(--i-tx)}.tag.t-E{--tx:var(--e-tx)}.tag.t-FR,.tag.t-CH{--tx:var(--n-tx)}
 
 /* Filtres */
-.filtres{margin-top:34px;padding:16px;border:1px dashed var(--trait-fort);border-radius:var(--rayon);display:grid;gap:14px}
+.filtres{margin-top:34px;padding:16px;border:1px dashed var(--trait-fort);border-radius:var(--rayon);display:grid;gap:12px;scroll-margin-top:12px}
+.ligne.entre{justify-content:space-between}
+.plus > summary{list-style:none;display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-weight:650;color:var(--doux);min-height:36px}
+.plus > summary::-webkit-details-marker{display:none}
+.plus > summary .chev{width:28px;height:28px}
+.plus[open] > summary .chev{transform:rotate(180deg)}
+.plus .types{margin-top:8px}
+.compte{font-size:.78rem;font-weight:700;padding:1px 8px;border-radius:var(--pastille);background:var(--n-bg);color:var(--n-tx)}
+mark{background:var(--e-bg);color:var(--texte);border-radius:3px;padding:0 1px}
 .recherche{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--trait-fort);border-radius:var(--pastille);padding:0 14px;min-height:46px}
 .recherche:focus-within{outline:3px solid var(--accent);outline-offset:1px}
 .recherche input{flex:1;border:0;background:none;outline:none;min-width:0;padding:10px 0;font-size:1rem}
@@ -95,10 +116,13 @@ select{min-height:38px;border-radius:10px;border:1px solid var(--trait-fort);bac
 .btn.primaire{background:var(--accent);color:var(--sur-accent);border-color:var(--accent)}
 .btn.primaire:hover{filter:brightness(1.08)}
 
-/* Bandeau de récupération */
-.recup{margin:0;padding:8px 14px;border-radius:var(--rayon);background:var(--surface);border:1px solid var(--trait);font-size:.9rem;color:var(--doux);display:flex;gap:8px;align-items:flex-start}
+/* Bandeau de récupération (une ligne, détail au toucher) */
+.recup{font-size:.82rem;color:var(--doux)}
+.recup > summary{list-style:none;display:flex;align-items:center;gap:6px;cursor:pointer}
+.recup > summary::-webkit-details-marker{display:none}
 .recup strong{color:var(--texte);font-weight:650}
-.recup svg.i{width:18px;height:18px;margin-top:2px}
+.recup svg.i{width:15px;height:15px}
+.recup p{margin:4px 0 0 21px}
 
 /* Liste par année et par mois */
 .an{margin-top:34px}
@@ -124,6 +148,9 @@ select{min-height:38px;border-radius:10px;border:1px solid var(--trait-fort);bac
 .puce small{font-size:.7rem;opacity:.95}
 .t-M{--plein:var(--m)}.t-I{--plein:var(--i)}.t-E{--plein:var(--e)}.t-FR,.t-CH{--plein:var(--n)}
 .nom{margin:0;font-size:1.03rem;font-weight:650;line-height:1.3}
+.ouvrir{all:unset;cursor:pointer;border-radius:4px}
+.ouvrir:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.ouvrir:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .meta{margin:5px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:.84rem;color:var(--doux)}
 .pas{display:inline-flex;align-items:center;gap:4px;padding:1px 9px;border-radius:var(--pastille);font-weight:600}
 .pas.t-M{background:var(--m-bg);color:var(--m-tx)}.pas.t-I{background:var(--i-bg);color:var(--i-tx)}.pas.t-E{background:var(--e-bg);color:var(--e-tx)}.pas.t-FR,.pas.t-CH{background:var(--n-bg);color:var(--n-tx)}
@@ -159,33 +186,41 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 .version ul{margin:8px 0 0;padding-left:1.2rem}
 .toast{white-space:nowrap;position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--texte);color:var(--fond);padding:10px 18px;border-radius:var(--pastille);font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s}
 .toast.vu{opacity:1}
+.haut{position:fixed;left:calc(16px + env(safe-area-inset-left));bottom:calc(20px + env(safe-area-inset-bottom));z-index:5;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 16px;border-radius:var(--pastille);border:0;background:var(--texte);color:var(--fond);font-weight:650;cursor:pointer;box-shadow:0 6px 20px rgba(20,18,40,.25)}
+.haut[hidden]{display:none}
+.nouvelle{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));transform:translateX(-50%);z-index:6;display:flex;align-items:center;gap:12px;padding:8px 8px 8px 16px;border-radius:var(--pastille);background:var(--accent);color:var(--sur-accent);font-weight:600;box-shadow:0 6px 20px rgba(20,18,40,.25);white-space:nowrap}
+.nouvelle button{border:0;border-radius:var(--pastille);background:var(--sur-accent);color:var(--accent);font-weight:700;padding:6px 14px;cursor:pointer}
+.nouvelle[hidden]{display:none}
+.detail-date{margin:0 0 10px;font-size:1.05rem;font-weight:650}
+.detail-meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px;font-size:.88rem}
+.sous{margin:18px 0 8px;font-size:1.02rem}
 @media (max-width:520px){
   .j{gap:12px}
-  .prochains li{grid-template-columns:6.2rem 10px 1fr}
+  .prochains li{grid-template-columns:5.6rem 1fr}
 }
 </style>
 </head>
 <body>
 <div class="page">
-  <p class="recup" id="recup"></p>
+  <details class="recup" id="recup"></details>
   <header class="hero">
     <h1 class="marque"><span class="points" aria-hidden="true"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span></span><span id="nomSite">MondialDay</span> <small id="titreSite">Chaque jour sa journée</small></h1>
     <div id="hero"></div>
   </header>
 
   <main>
-    <section class="filtres" aria-label="Filtres">
+    <section class="filtres" id="filtres" aria-label="Filtres">
       <label class="recherche"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Rechercher</span><input id="q" type="search" placeholder="Rechercher une journée ou un organisme" autocomplete="off"></label>
-      <div class="types" role="group" aria-label="Types de journées" id="types"></div>
-      <div class="ligne">
+      <div class="ligne entre">
         <label class="inter"><input type="checkbox" id="offic"> Officielles seulement</label>
-        <label><span class="sr">Mois</span><select id="mois"></select></label>
         <button class="btn" id="btnTout" type="button">Tout développer</button>
       </div>
       <div class="actions">
-        <button class="btn primaire" id="btnExport"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg><span id="txtExport">Exporter la sélection</span></button>
-        <button class="btn" id="btnAbo"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4"/><path d="M9 15.5l2 2 4-4"/></svg>S’abonner au calendrier</button>
+        <button class="btn primaire" id="btnAgenda"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4M12 13v5m-2.5-2.5h5"/></svg><span id="txtAgenda">Ajouter à mon agenda</span></button>
       </div>
+      <details class="plus" id="plus"><summary>Plus de filtres <span class="compte" id="compte" hidden></span><span class="chev"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+        <div class="types" role="group" aria-label="Types de journées" id="types"></div>
+      </details>
     </section>
 
     <div id="liste" aria-live="polite"></div>
@@ -197,17 +232,15 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   </footer>
 </div>
 
-<dialog id="dlgExport" aria-labelledby="tExport"><div class="fen">
-  <header><h2 id="tExport">Exporter la sélection</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
-  <p id="resumeExport"></p>
-  <p class="aide">Le fichier .ics s’importe dans Google Agenda, Outlook ou Calendrier (Apple). Chaque journée y revient automatiquement chaque année.</p>
-  <p><label class="inter"><input type="checkbox" id="rappel"> <span id="txtRappel">Rappel la veille</span></label></p>
-  <div class="actions"><button class="btn primaire" id="btnTelecharger"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg>Télécharger le fichier .ics</button></div>
-</div></dialog>
-
-<dialog id="dlgAbo" aria-labelledby="tAbo"><div class="fen">
-  <header><h2 id="tAbo">S’abonner au calendrier</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
-  <p>Votre agenda suit ce calendrier et se met à jour tout seul quand la liste évolue.</p>
+<dialog id="dlgAgenda" aria-labelledby="tAgenda"><div class="fen">
+  <header><h2 id="tAgenda">Ajouter à mon agenda</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <div class="bloc">
+    <h3>Télécharger ma sélection</h3>
+    <p class="aide"><span id="resumeExport"></span> Un fichier .ics, à ouvrir dans Google Agenda, Outlook ou Calendrier (Apple) ; chaque journée y revient chaque année.</p>
+    <p><label class="inter"><input type="checkbox" id="rappel"> <span id="txtRappel">Rappel la veille</span></label></p>
+    <div class="actions"><button class="btn primaire" id="btnTelecharger"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-4-4 4 4 4-4M5 20h14"/></svg>Télécharger le fichier .ics</button></div>
+  </div>
+  <h3 class="sous">Ou s’abonner : l’agenda se met à jour tout seul</h3>
   <div id="abos"></div>
   <details class="aide"><summary>Comment faire selon mon agenda</summary><ul>
     <li>iPhone, iPad, Mac : touchez « S’abonner », puis confirmez.</li>
@@ -216,17 +249,31 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   </ul></details>
 </div></dialog>
 
+<dialog id="dlgJour" aria-labelledby="tJour"><div class="fen">
+  <header><h2 id="tJour"></h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
+  <p class="detail-date" id="jourDate"></p>
+  <p class="detail-meta" id="jourMeta"></p>
+  <p class="aide" id="jourOrg"></p>
+  <div class="actions">
+    <button class="btn primaire" id="jourAgenda"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4M12 13v5m-2.5-2.5h5"/></svg>Ajouter à mon agenda</button>
+    <button class="btn" id="jourPartage"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4m-4 4 4-4 4 4M5 13v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6"/></svg>Partager</button>
+    <a class="btn" id="jourPlus" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>En savoir plus</a>
+  </div>
+</div></dialog>
+
 <dialog id="dlgNouv" aria-labelledby="tNouv"><div class="fen">
   <header><h2 id="tNouv">Nouveautés</h2><button class="ico" data-fermer aria-label="Fermer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></header>
   <div id="nouv"></div>
 </div></dialog>
 
 <div class="toast" id="toast" role="status"></div>
+<button class="haut" id="haut" type="button" hidden><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Rechercher</button>
+<div class="nouvelle" id="nouvelle" role="status" hidden>Nouvelle version disponible <button type="button" id="actualiser">Actualiser</button></div>
 
-<script src="config.js?v=1.2"></script>
-<script src="journees.js?v=1.2"></script>
+<script src="config.js?v=1.3"></script>
+<script src="journees.js?v=1.3"></script>
 <script src="journees-auto.js"></script>
-<script src="nouveautes.js?v=1.2"></script>
+<script src="nouveautes.js?v=1.3"></script>
 
 <!-- Moteur de dates et d'export .ics (sans accès à la page : réutilisé par outils/generer-ics.js) -->
 <script id="moteur">
@@ -359,7 +406,6 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   var ORDRE = ["M","I","E","FR","CH"];
   var LIB_FILTRE = { M: "Mondiales", I: "Internationales", E: "Européennes", FR: "France", CH: "Suisse" };
   var ICO_CAL = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4m8-4v4M12 13v5m-2.5-2.5h5"/></svg>';
-  var ICO_INFO = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>';
   var ICO_OK = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
   var ICO_CHEV = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
   var ICO_MAJ = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg>';
@@ -369,7 +415,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   var maintenant = new Date();
   var auj = MD.utc(maintenant.getFullYear(), maintenant.getMonth() + 1, maintenant.getDate());
   var AN0 = auj.getUTCFullYear(), NB_ANS = Math.max(1, C.anneesAffichees || 2);
-  var etat = { q: "", types: { M: 1, I: 1, E: 1, FR: 1, CH: 1 }, offic: false, mois: "tous", ouverts: {} };
+  var etat = { q: "", types: { M: 1, I: 1, E: 1, FR: 1, CH: 1 }, offic: false, ouverts: {} };
 
   function esc(t) { return String(t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function norm(t) { return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’']/g, " "); }
@@ -391,26 +437,38 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   var CACHE = {};
   function occ(an) { return CACHE[an] || (CACHE[an] = occurrences(an)); }
 
+  // Ligne allégée : le type, et pour une journée officielle l'organisme qui l'a proclamée
   function pastilles(j) {
     return '<span class="pas t-' + j[2] + '">' + esc(T[j[2]]) + '</span>' +
-      (j[3] ? '<span class="pas off">' + ICO_OK + 'Officielle</span>' : '<span class="pas pop">Populaire</span>') +
-      '<span>' + esc(j[4]) + '</span>';
+      (j[3] ? '<span class="pas off" title="Journée officielle">' + ICO_OK + esc(j[4]) + '</span>' : '');
   }
+  function pastillesCompletes(j) {
+    return '<span class="pas t-' + j[2] + '">' + esc(T[j[2]]) + '</span>' +
+      (j[3] ? '<span class="pas off">' + ICO_OK + 'Officielle</span>' : '<span class="pas pop">Populaire</span>');
+  }
+  // Mots recherchés surlignés (sans tenir compte des accents ni des majuscules)
+  function surligner(t) {
+    var mots = norm(etat.q.trim()).split(/\s+/).filter(Boolean);
+    if (!mots.length) return esc(t);
+    var n = norm(t), zones = [];
+    mots.forEach(function (m) { var k = n.indexOf(m); while (k >= 0) { zones.push([k, k + m.length]); k = n.indexOf(m, k + 1); } });
+    if (!zones.length || n.length !== t.length) return esc(t);
+    zones.sort(function (a, b) { return a[0] - b[0]; });
+    var h = "", pos = 0;
+    zones.forEach(function (z) { if (z[0] < pos) z[0] = pos; if (z[1] <= z[0]) return; h += esc(t.slice(pos, z[0])) + "<mark>" + esc(t.slice(z[0], z[1])) + "</mark>"; pos = z[1]; });
+    return h + esc(t.slice(pos));
+  }
+  function boutonNom(o, html) { return '<button class="ouvrir" data-jour="' + o.i + '|' + o.an + '" aria-haspopup="dialog">' + html + '</button>'; }
   function boutonAjout(i, nom) { return '<button class="ico" data-ajout="' + i + '" aria-label="Ajouter « ' + esc(nom) + ' » à mon agenda" title="Ajouter à mon agenda">' + ICO_CAL + '</button>'; }
 
   /* Bandeau : date de la dernière récupération réussie */
   function rendreRecup() {
     var d = AUTO && AUTO.derniereRecuperation;
-    var h = ICO_MAJ + "<span>";
-    if (d) {
-      h += "Dernière récupération des informations : <strong>" + esc(fmtJour.format(dateIso(d))) + "</strong>";
-      if (AUTO.source) h += " <span class=\"sr\">(source : " + esc(AUTO.source) + ")</span>";
-    } else {
-      var prochaine = MD.utc(auj.getUTCFullYear(), auj.getUTCMonth() + 2, 1);
-      h += "Dernière récupération des informations : <strong>aucune pour l’instant</strong>. Liste initiale établie le " + esc(fmtJour.format(dateIso(C.dateListeInitiale))) +
-        " ; première récupération automatique prévue le " + esc(fmtJour.format(prochaine)) + ".";
-    }
-    $("#recup").innerHTML = h + "</span>";
+    var prochaine = MD.utc(auj.getUTCFullYear(), auj.getUTCMonth() + 2, 1);
+    var h = "<summary>" + ICO_MAJ + "<span>Dernière récupération des informations : <strong>" + (d ? esc(fmtJour.format(dateIso(d))) : "aucune pour l’instant") + "</strong></span></summary><p>";
+    h += d ? "Source : " + esc(AUTO.source || "") + ". " : "Liste initiale établie le " + esc(fmtJour.format(dateIso(C.dateListeInitiale))) + ". ";
+    h += "Prochaine mise à jour automatique le " + esc(fmtJour.format(prochaine)) + ".</p>";
+    $("#recup").innerHTML = h;
   }
 
   /* En-tête : aujourd'hui et prochains jours */
@@ -421,7 +479,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     var h = '<p class="grande-date"><span class="sr">Aujourd’hui, </span>' + esc(mots.join(" ")) + ' <span style="white-space:nowrap">' + esc(dernier) + confettis() + '</span></p>';
     if (duJour.length) {
       h += '<ul class="du-jour">' + duJour.map(function (o) {
-        return '<li><span class="barre-type t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><div style="flex:1"><div class="nom-jour">' + esc(o.j[1]) + '</div><p class="meta">' + pastilles(o.j) + '</p></div>' + boutonAjout(o.i, o.j[1]) + '</li>';
+        return '<li><span class="barre-type t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><div style="flex:1"><div class="nom-jour">' + boutonNom(o, esc(o.j[1])) + '</div><p class="meta">' + pastilles(o.j) + '</p></div>' + boutonAjout(o.i, o.j[1]) + '</li>';
       }).join("") + '</ul>';
     } else {
       var proch = tous.find(function (o) { return o.debut > auj; });
@@ -432,13 +490,13 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     var suite = tous.filter(function (o) { if (o.debut > auj && o.debut <= limite && !vus[o.i]) { vus[o.i] = 1; return true; } return false; });
     h += '<section class="prochains" aria-labelledby="tProch"><h2 id="tProch">Les ' + jours + ' prochains jours</h2>';
     h += suite.length ? '<ol>' + suite.map(function (o) {
-      return '<li><time datetime="' + iso(o.debut) + '">' + esc(fmtCourt.format(o.debut)) + '</time><span class="pt t-' + o.j[2] + '" style="background:var(--plein)" aria-hidden="true"></span><span>' + esc(o.j[1]) + '</span></li>';
+      return '<li><time datetime="' + iso(o.debut) + '">' + esc(fmtCourt.format(o.debut)) + '</time><span>' + boutonNom(o, esc(o.j[1])) + '<span class="tag t-' + o.j[2] + '">' + esc(T[o.j[2]]) + '</span></span></li>';
     }).join("") + '</ol>' : '<p class="vide-jour">Aucune journée dans cette période.</p>';
     $("#hero").innerHTML = h + '</section>';
     $("#versMois").addEventListener("click", function (e) {
       e.preventDefault();
       var id = "m-" + AN0 + "-" + (auj.getUTCMonth() + 1);
-      if (etat.mois !== "tous" || !document.getElementById(id)) { reinitialiser(); }
+      if (!document.getElementById(id)) { reinitialiser(); }
       etat.ouverts[id] = true;
       var d = document.getElementById(id);
       if (d) { d.open = true; d.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); d.querySelector("summary").focus({ preventScroll: true }); }
@@ -455,7 +513,6 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   function filtre(o, q) {
     if (!etat.types[o.j[2]]) return false;
     if (etat.offic && !o.j[3]) return false;
-    if (etat.mois !== "tous" && o.debut.getUTCMonth() + 1 !== +etat.mois) return false;
     if (q && q.split(/\s+/).some(function (m) { return o.recherche.indexOf(m) < 0; })) return false;
     return true;
   }
@@ -469,19 +526,20 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     selectionParAn().forEach(function (g) { g.liste.forEach(function (o) { if (!vus[o.i]) { vus[o.i] = 1; r.push(o); } }); });
     return r;
   }
-  function filtreActif() { return !!etat.q.trim() || etat.mois !== "tous"; }
+  function filtreActif() { return !!etat.q.trim(); }
 
   function ligne(o) {
     var j = o.j, jour = o.debut.getUTCDate(), plage = o.dur > 1 ? jour + "–" + o.fin.getUTCDate() : jour;
-    var wiki = "https://fr.wikipedia.org/w/index.php?search=" + encodeURIComponent(j[1]);
     return '<li class="j t-' + j[2] + (couvre(o, auj) ? " aujourdhui" : "") + '"><time class="puce" datetime="' + iso(o.debut) + '"><b>' + plage + '</b><small>' + MOIS_C[o.debut.getUTCMonth()] + '</small></time>' +
-      '<div><h4 class="nom">' + esc(j[1]) + '</h4><span class="sr">' + esc(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + esc(fmtLong.format(o.fin)) : "") + " " + o.an + '</span><p class="meta">' + pastilles(j) + '</p></div>' +
-      '<div class="act"><a class="ico" href="' + wiki + '" target="_blank" rel="noopener" aria-label="En savoir plus sur « ' + esc(j[1]) + ' » (Wikipédia)" title="En savoir plus">' + ICO_INFO + '</a>' + boutonAjout(o.i, j[1]) + '</div></li>';
+      '<div><h4 class="nom">' + boutonNom(o, surligner(j[1])) + '</h4><span class="sr">' + esc(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + esc(fmtLong.format(o.fin)) : "") + " " + o.an + '</span><p class="meta">' + pastilles(j) + '</p></div>' +
+      '<div class="act">' + boutonAjout(o.i, j[1]) + '</div></li>';
   }
 
   function rendreListe() {
     var parAn = selectionParAn(), total = selection().length;
-    $("#txtExport").textContent = "Exporter la sélection (" + total + ")";
+    $("#txtAgenda").textContent = "Ajouter à mon agenda (" + total + ")";
+    var masques = ORDRE.filter(function (t) { return !etat.types[t]; }).length;
+    $("#compte").hidden = !masques; $("#compte").textContent = masques + (masques > 1 ? " types masqués" : " type masqué");
     if (!total) {
       $("#liste").innerHTML = '<div class="vide"><p>Aucune journée ne correspond à ces filtres.</p><button class="btn" id="raz">Réinitialiser les filtres</button></div>';
       $("#raz").addEventListener("click", reinitialiser);
@@ -529,7 +587,6 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     $("#types").innerHTML = ORDRE.map(function (t) {
       return '<button class="type t-' + t + '" data-type="' + t + '" aria-pressed="true"><span class="pt" aria-hidden="true"></span>' + LIB_FILTRE[t] + '</button>';
     }).join("");
-    $("#mois").innerHTML = '<option value="tous">Tous les mois</option>' + MOIS.map(function (m, k) { return '<option value="' + (k + 1) + '">' + maj(m) + '</option>'; }).join("");
     $("#types").addEventListener("click", function (e) {
       var b = e.target.closest(".type"); if (!b) return;
       var t = b.dataset.type; etat.types[t] = etat.types[t] ? 0 : 1;
@@ -537,11 +594,10 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     });
     $("#q").addEventListener("input", function (e) { etat.q = e.target.value; rendreListe(); });
     $("#offic").addEventListener("change", function (e) { etat.offic = e.target.checked; rendreListe(); });
-    $("#mois").addEventListener("change", function (e) { etat.mois = e.target.value; rendreListe(); });
   }
   function reinitialiser() {
-    etat.q = ""; etat.offic = false; etat.mois = "tous"; ORDRE.forEach(function (t) { etat.types[t] = 1; });
-    $("#q").value = ""; $("#offic").checked = false; $("#mois").value = "tous";
+    etat.q = ""; etat.offic = false; ORDRE.forEach(function (t) { etat.types[t] = 1; });
+    $("#q").value = ""; $("#offic").checked = false;
     document.querySelectorAll(".type").forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
     rendreListe();
   }
@@ -565,16 +621,16 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     telecharger(MD.ics([j], options(C.rappelParDefaut, j[1])), nomFichier(j[1]));
     toast("Fichier prêt pour votre agenda");
   });
-  $("#btnExport").addEventListener("click", function () {
+  $("#btnAgenda").addEventListener("click", function () {
     var n = selection().length;
-    $("#resumeExport").textContent = n + (n > 1 ? " journées sélectionnées" : " journée sélectionnée") + " avec les filtres actuels.";
-    $("#dlgExport").showModal();
+    $("#resumeExport").textContent = n + (n > 1 ? " journées" : " journée") + " avec la recherche et les filtres actuels.";
+    $("#dlgAgenda").showModal();
   });
   $("#btnTelecharger").addEventListener("click", function () {
     var sel = selection().map(function (o) { return o.j; });
     var nom = C.nomSite + (etat.offic ? " · officielles" : "");
     telecharger(MD.ics(sel, options($("#rappel").checked, nom)), "mondialday-selection.ics");
-    $("#dlgExport").close(); toast("Fichier .ics téléchargé");
+    $("#dlgAgenda").close(); toast("Fichier .ics téléchargé");
   });
 
   /* Abonnement */
@@ -584,7 +640,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
     var abos = [["calendrier.ics", "Toutes les journées", J.length], ["officielles.ics", "Seulement les officielles", nbOff]];
     $("#abos").innerHTML = abos.map(function (a) {
       var https = base + a[0], webcal = https.replace(/^https?:/, "webcal:");
-      return '<div class="bloc"><h3>' + a[1] + '</h3><p class="aide">' + a[2] + ' journées, répétées chaque année.</p><div class="actions"><a class="btn primaire" href="' + webcal + '">S’abonner</a><button class="btn" data-copie="' + https + '">Copier l’adresse</button></div></div>';
+      return '<div class="bloc"><h3>' + a[1] + '</h3><p class="aide">' + a[2] + ' journées, répétées chaque année.</p><div class="actions"><a class="btn" href="' + webcal + '">S’abonner</a><button class="btn" data-copie="' + https + '">Copier l’adresse</button></div></div>';
     }).join("");
     $("#abos").addEventListener("click", function (e) {
       var b = e.target.closest("[data-copie]"); if (!b) return;
@@ -592,7 +648,49 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
       (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { toast("Adresse copiée"); }, function () { window.prompt("Adresse du calendrier :", url); });
     });
   }
-  $("#btnAbo").addEventListener("click", function () { $("#dlgAbo").showModal(); });
+
+  /* Fiche d'une journée : détail, agenda, partage */
+  function slug(t) { return norm(t).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  var jourOuvert = null;
+  function ouvrirJour(i, an) {
+    var j = J[i]; if (!j) return;
+    var o = MD.occurrence(j[0], an); jourOuvert = { j: j, i: i, debut: o.debut, fin: o.fin, dur: o.dur };
+    $("#tJour").textContent = j[1];
+    $("#jourDate").textContent = maj(fmtLong.format(o.debut)) + (o.dur > 1 ? " au " + fmtLong.format(o.fin) : "") + " " + an;
+    $("#jourMeta").innerHTML = pastillesCompletes(j);
+    $("#jourOrg").textContent = (j[3] ? "Proclamée par : " : "À l’initiative de : ") + j[4];
+    $("#jourPlus").href = "https://fr.wikipedia.org/w/index.php?search=" + encodeURIComponent(j[1]);
+    $("#dlgJour").showModal();
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-jour]"); if (!b) return;
+    var p = b.dataset.jour.split("|"); ouvrirJour(+p[0], +p[1]);
+  });
+  $("#jourAgenda").addEventListener("click", function () {
+    var j = jourOuvert.j; telecharger(MD.ics([j], options(C.rappelParDefaut, j[1])), nomFichier(j[1])); toast("Fichier prêt pour votre agenda");
+  });
+  $("#jourPartage").addEventListener("click", function () {
+    var j = jourOuvert.j, url = C.urlSite.replace(/\/?$/, "/") + "#j-" + slug(j[1]);
+    var texte = j[1] + " : " + fmtLong.format(jourOuvert.debut) + (jourOuvert.dur > 1 ? " au " + fmtLong.format(jourOuvert.fin) : "") + ".";
+    if (navigator.share) { navigator.share({ title: j[1], text: texte, url: url }).catch(function () {}); return; }
+    (navigator.clipboard ? navigator.clipboard.writeText(texte + " " + url) : Promise.reject()).then(function () { toast("Texte et lien copiés"); }, function () { window.prompt("À partager :", texte + " " + url); });
+  });
+  // Lien partagé « …#j-nom-de-la-journee » : ouvre directement sa fiche
+  function ouvrirDepuisAdresse() {
+    var m = /^#j-(.+)$/.exec(location.hash); if (!m) return;
+    var k = J.findIndex(function (j) { return slug(j[1]) === m[1]; }); if (k < 0) return;
+    var an = MD.occurrence(J[k][0], AN0).fin < auj ? AN0 + 1 : AN0;
+    ouvrirJour(k, an);
+  }
+
+  /* Retour rapide à la recherche quand les filtres ne sont plus visibles */
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (e) { $("#haut").hidden = e[0].isIntersecting || e[0].boundingClientRect.top > 0; }).observe($("#filtres"));
+  }
+  $("#haut").addEventListener("click", function () {
+    $("#filtres").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    $("#q").focus({ preventScroll: true });
+  });
 
   /* Nouveautés */
   function construireNouv() {
@@ -611,9 +709,17 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
   $("#nomSite").textContent = C.nomSite; $("#piedNom").textContent = C.nomSite; $("#titreSite").textContent = C.titre;
   $("#numVersion").textContent = VERSION; $("#rappel").checked = !!C.rappelParDefaut;
   $("#txtRappel").textContent = "Rappel la veille à " + C.heureRappel + " h";
-  construireFiltres(); construireAbos(); construireNouv(); rendreRecup(); rendreHero(); rendreListe();
+  construireFiltres(); construireAbos(); construireNouv(); rendreRecup(); rendreHero(); rendreListe(); ouvrirDepuisAdresse();
 
-  if ("serviceWorker" in navigator && /^https:|^http:\/\/localhost/.test(location.href)) navigator.serviceWorker.register("sw.js").catch(function () {});
+  // Hors ligne, et message quand une nouvelle version du site vient d'être installée
+  if ("serviceWorker" in navigator && /^https:|^http:\/\/localhost/.test(location.href)) {
+    var avaitVersion = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js").then(function (reg) {
+      document.addEventListener("visibilitychange", function () { if (!document.hidden) reg.update().catch(function () {}); });
+    }).catch(function () {});
+    navigator.serviceWorker.addEventListener("controllerchange", function () { if (avaitVersion) $("#nouvelle").hidden = false; });
+    $("#actualiser").addEventListener("click", function () { location.reload(); });
+  }
 })();
 </script>
 </body>

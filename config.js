@@ -1,7 +1,7 @@
 /* MondialDay — réglages modifiables sans toucher au code. */
 window.CONFIG = {
   // Numéro de version du site : le seul endroit à modifier (puis lancer « node outils/version.js »)
-  version: "1.2",
+  version: "1.3",
   nomSite: "MondialDay",
   titre: "Chaque jour sa journée",
   // Adresse publique du site (sert aux liens d'abonnement au calendrier)

@@ -1,5 +1,5 @@
 /* MondialDay — consultation hors ligne. Changer VERSION à chaque version du site. */
-const VERSION = "1.2";
+const VERSION = "1.3";
 const CACHE = "mondialday-" + VERSION;
 const FICHIERS = ["./", "index.html", "config.js?v=" + VERSION, "journees.js?v=" + VERSION, "nouveautes.js?v=" + VERSION, "journees-auto.js", "icon-180.png"];
 

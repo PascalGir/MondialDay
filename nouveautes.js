@@ -1,6 +1,20 @@
 /* MondialDay — historique public des versions (le plus récent en premier). */
 window.NOUVEAUTES = [
   {
+    version: "1.3",
+    date: "2026-11-17",
+    type: "Améliorations",
+    points: [
+      "Page plus simple : un seul bouton « Ajouter à mon agenda » (téléchargement ou abonnement), filtres par type rangés dans « Plus de filtres », choix du mois retiré au profit des mois dépliables.",
+      "Fiche de chaque journée en touchant son nom : date, organisme, ajout à l’agenda, partage et lien pour en savoir plus.",
+      "Partage d’une journée par message ; le lien ouvre directement sa fiche.",
+      "Lignes de la liste allégées, mot recherché surligné, bouton pour revenir à la recherche.",
+      "Type de journée écrit en toutes lettres dans « Les 14 prochains jours ».",
+      "Bandeau de mise à jour sur une seule ligne, message quand une nouvelle version du site est disponible.",
+      "Image et description quand le lien du site est partagé, nouvelles journées suisses."
+    ]
+  },
+  {
     version: "1.2",
     date: "2026-11-17",
     type: "Corrections",

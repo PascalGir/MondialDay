@@ -6,6 +6,7 @@
    Types : M mondiale · I internationale · E européenne · FR nationale France · CH nationale Suisse. */
 window.JOURNEES = [
 ["01-01","Journée mondiale de la paix","M",0,"Saint-Siège"],
+["01-02","Saint-Berchtold","CH",0,"Tradition (plusieurs cantons)"],
 ["01-04","Journée mondiale du braille","M",1,"ONU"],
 ["01-21","Journée internationale des câlins","I",0,"Initiative populaire"],
 ["01-24","Journée internationale de l’éducation","I",1,"ONU / UNESCO"],
@@ -34,6 +35,7 @@ window.JOURNEES = [
 ["02-FIN","Journée internationale des maladies rares","I",0,"EURORDIS"],
 
 ["03-01","Journée zéro discrimination","M",1,"ONUSIDA"],
+["03-1SU","Journée des malades","CH",0,"Association Journée des malades"],
 ["03-03","Journée mondiale de la vie sauvage","M",1,"ONU"],
 ["03-03","Journée mondiale de l’audition","M",1,"OMS"],
 ["03-04","Journée mondiale de l’ingénierie pour le développement durable","M",1,"UNESCO"],
@@ -140,6 +142,7 @@ window.JOURNEES = [
 ["05-30","Journée internationale de la pomme de terre","I",1,"ONU"],
 ["05-30","Journée mondiale de la sclérose en plaques","M",0,"Fédération internationale de la SEP"],
 ["05-31","Journée mondiale sans tabac","M",1,"OMS"],
+["05-LWE","Journée suisse de la lecture à voix haute","CH",0,"Institut suisse Jeunesse et Médias"],
 ["MERES_FR","Fête des mères","FR",1,"République française"],
 
 ["06-01","Journée mondiale des parents","M",1,"ONU"],
@@ -159,6 +162,7 @@ window.JOURNEES = [
 ["06-12","Journée mondiale contre le travail des enfants","M",1,"OIT"],
 ["06-13","Journée internationale de sensibilisation à l’albinisme","I",1,"ONU"],
 ["06-14","Journée mondiale du donneur de sang","M",1,"OMS"],
+["06-14","Grève féministe","CH",0,"Collectifs de la grève féministe"],
 ["06-15","Journée mondiale de sensibilisation à la maltraitance des personnes âgées","M",1,"ONU"],
 ["06-16","Journée internationale des envois de fonds à la famille","I",1,"ONU"],
 ["06-17","Journée mondiale de la lutte contre la désertification et la sécheresse","M",1,"ONU"],

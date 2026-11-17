@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: mise-a-jour
@@ -39,11 +40,18 @@ jobs:
         run: |
           git config user.name "MondialDay (mise à jour automatique)"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add journees-auto.js calendrier.ics officielles.ics
+          git add journees-auto.js calendrier.ics officielles.ics; [ -f rapport-mise-a-jour.md ] && git add rapport-mise-a-jour.md
           if git diff --cached --quiet; then echo "Rien à enregistrer"; exit 0; fi
           if [ "${{ steps.maj.outcome }}" = "success" ]; then MSG="Mise à jour automatique des journées ($(date +%Y-%m-%d))"; else MSG="Tentative de mise à jour échouée ($(date +%Y-%m-%d))"; fi
           git commit -m "$MSG"
           git push
+
+      - name: Ouvrir un ticket « Journées à vérifier »
+        if: steps.maj.outcome == 'success' && steps.maj.outputs.a_verifier != '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "Journées à vérifier — $(date +%d.%m.%Y)" --body-file rapport-mise-a-jour.md
 
       - name: Signaler un échec
         if: steps.maj.outcome == 'failure'

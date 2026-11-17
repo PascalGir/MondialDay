@@ -16,6 +16,7 @@ const fs = require("fs"), path = require("path"), vm = require("vm");
 
 const RACINE = path.join(__dirname, "..");
 const FICHIER_AUTO = path.join(RACINE, "journees-auto.js");
+const FICHIER_RAPPORT = path.join(RACINE, "rapport-mise-a-jour.md");
 const SOURCE_NOM = "Wikipédia — « Journée internationale »";
 const SOURCE_URL = "https://fr.wikipedia.org/w/api.php?action=parse&page=Journ%C3%A9e_internationale&prop=wikitext&format=json&formatversion=2&redirects=1";
 const MIN_JOURNEES = 40, MIN_MOIS = 10, ESSAIS = 3, DELAI_MS = 30000;
@@ -249,9 +250,15 @@ async function main() {
     };
     ecrire({ source: SOURCE_NOM, derniereRecuperation: date, derniereTentative: { date, statut: "réussie", message: "" }, statistiques: stats, corrections, ajouts });
     console.log("Récupération réussie le " + date + " :", JSON.stringify(stats));
-    // Rapport lisible dans le journal de l'automatisation
-    Object.entries(corrections).forEach(([k, r]) => console.log("  ~ date corrigée : " + k + " → " + r));
-    ajouts.forEach(j => console.log("  + " + j[0] + "  " + j[1] + " (" + j[4] + ")"));
+    // Rapport à relire : fichier du dépôt, journal de l'automatisation, et ticket GitHub s'il y a du nouveau
+    const nouveaux = ajouts.filter(j => !avant.has(MD.cle(j[1])));
+    const retires = [...avant].filter(([k]) => !apres.has(k)).map(([, j]) => j);
+    const corrNouv = Object.entries(corrections).filter(([k, r]) => (auto.corrections || {})[k] !== r);
+    const rapport = rediger({ date, stats, nouveaux, retires, corrNouv, ajouts, corrections, MD, an });
+    fs.writeFileSync(FICHIER_RAPPORT, rapport);
+    console.log(rapport);
+    const aVerifier = nouveaux.length + retires.length + corrNouv.length;
+    if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, "a_verifier=" + aVerifier + "\n");
   } catch (e) {
     auto.source = auto.source || SOURCE_NOM;
     auto.derniereTentative = { date, statut: "échec", message: e.message };
@@ -261,5 +268,20 @@ async function main() {
   }
 }
 
+/* ---------- Rapport mensuel ---------- */
+function rediger({ date, stats, nouveaux, retires, corrNouv, ajouts, corrections, MD, an }) {
+  const quand = r => { const o = MD.occurrence(r, an); return o.debut.toISOString().slice(5, 10).split("-").reverse().join(".") + (o.dur > 1 ? " (" + o.dur + " jours)" : ""); };
+  const ligne = j => "- " + quand(j[0]) + " · " + j[1] + " · " + (j[3] ? "officielle (" + j[4] + ")" : "populaire");
+  const L = ["# Journées à vérifier — mise à jour du " + date.split("-").reverse().join("."), "",
+    `Source : ${SOURCE_NOM}. Journées lues : ${stats.luesDansLaSource}, déjà connues : ${stats.dejaPresentes}.`, ""];
+  L.push("## Nouvelles depuis la dernière mise à jour (" + nouveaux.length + ")", "", ...(nouveaux.length ? nouveaux.map(ligne) : ["Aucune."]), "");
+  L.push("## Retirées de la source (" + retires.length + ")", "", ...(retires.length ? retires.map(ligne) : ["Aucune."]), "");
+  L.push("## Dates corrigées (" + corrNouv.length + ")", "", ...(corrNouv.length ? corrNouv.map(([k, r]) => "- " + k + " → " + quand(r)) : ["Aucune."]), "");
+  L.push("## Pour écarter une journée", "",
+    "Ajouter son nom exact dans `journeesExclues` de `config.js` : elle disparaît du site et des calendriers, et n’est plus jamais ajoutée.", "",
+    "<details><summary>Toutes les journées venant de la source (" + ajouts.length + ")</summary>", "", ...ajouts.map(ligne), "", "</details>", "");
+  return L.join("\n");
+}
+
 if (require.main === module) main();
-module.exports = { analyser, comparer, nettoyer, lireDate, charger };
+module.exports = { analyser, comparer, nettoyer, lireDate, charger, rediger };
