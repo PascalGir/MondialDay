@@ -1,6 +1,16 @@
 /* MondialDay — historique public des versions (le plus récent en premier). */
 window.NOUVEAUTES = [
   {
+    version: "1.2",
+    date: "2026-11-17",
+    type: "Corrections",
+    points: [
+      "La mise à jour automatique du début de mois lit désormais correctement la liste de la source.",
+      "Une journée déjà présente sous un nom voisin n’est plus ajoutée une seconde fois.",
+      "Contrôles automatiques avant chaque mise à jour : une source mal lue ne modifie plus la liste."
+    ]
+  },
+  {
     version: "1.1",
     date: "2026-11-13",
     type: "Améliorations",

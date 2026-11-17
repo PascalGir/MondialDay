@@ -12,7 +12,7 @@ const moteur = /<script id="moteur">([\s\S]*?)<\/script>/.exec(html)[1];
 for (const f of ["config.js", "journees.js", "journees-auto.js"]) if (fs.existsSync(path.join(racine, f))) vm.runInContext(fs.readFileSync(path.join(racine, f), "utf8"), ctx);
 vm.runInContext(moteur, ctx);
 const { CONFIG: C, MD } = ctx.window;
-const J = MD.fusion(ctx.window.JOURNEES, ctx.window.JOURNEES_AUTO);
+const J = MD.fusion(ctx.window.JOURNEES, ctx.window.JOURNEES_AUTO, C.journeesExclues);
 const horodatage = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
 const opt = nom => ({ nom, url: C.urlSite, rappel: false, heureRappel: C.heureRappel, anneeDepart: C.anneeDepart, anneesCalculees: C.anneesCalculees, horodatage });
 fs.writeFileSync(path.join(racine, "calendrier.ics"), MD.ics(J, opt(C.nomSite)));

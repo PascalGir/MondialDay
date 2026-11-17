@@ -1,5 +1,7 @@
 /* MondialDay — réglages modifiables sans toucher au code. */
 window.CONFIG = {
+  // Numéro de version du site : le seul endroit à modifier (puis lancer « node outils/version.js »)
+  version: "1.2",
   nomSite: "MondialDay",
   titre: "Chaque jour sa journée",
   // Adresse publique du site (sert aux liens d'abonnement au calendrier)
@@ -16,5 +18,7 @@ window.CONFIG = {
   // Première année couverte par les fichiers .ics (les journées se répètent ensuite chaque année)
   anneeDepart: 2025,
   // Nombre d'années générées pour les dates calculées (fête des mères en France)
-  anneesCalculees: 10
+  anneesCalculees: 10,
+  // Journées de la source automatique à ne jamais ajouter (nom exact tel qu'il apparaît sur le site)
+  journeesExclues: []
 };

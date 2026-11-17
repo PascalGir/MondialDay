@@ -11,6 +11,8 @@ Adresse : https://pascalgir.github.io/MondialDay/
 - `journees.js` : la liste des journées. Une ligne par journée : `[règle de date, nom, type, officielle (1/0), organisme]`. Les règles de date sont décrites en tête du fichier.
 - `journees-auto.js` : données écrites par la mise à jour automatique (ajouts, corrections de dates, date de la dernière récupération réussie). Ne pas modifier à la main.
 - `outils/mise-a-jour.js` et `.github/workflows/mise-a-jour.yml` : mise à jour automatique le 1er de chaque mois depuis Wikipédia (lancement manuel possible dans l’onglet Actions → « Run workflow »).
+- `outils/tests.js` : tests automatiques (`node outils/tests.js`), lancés aussi avant chaque mise à jour mensuelle.
+- `outils/version.js` : reporte le numéro de version de `config.js` dans la page et le cache hors ligne.
 - `nouveautes.js` : historique public affiché dans la fenêtre « Nouveautés ».
 - `calendrier.ics`, `officielles.ics` : calendriers à suivre par abonnement, générés par `node outils/generer-ics.js`.
 - `sw.js` : consultation hors ligne.
@@ -20,7 +22,7 @@ Adresse : https://pascalgir.github.io/MondialDay/
 
 1. Modifier `journees.js`.
 2. Lancer `node outils/generer-ics.js` pour régénérer les deux fichiers .ics.
-3. Mettre à jour le numéro de version (page, `sw.js`, paramètres `?v=`), `CHANGELOG.md` et `nouveautes.js`.
+3. Changer `version` dans `config.js`, lancer `node outils/version.js`, compléter `CHANGELOG.md` et `nouveautes.js`, puis `node outils/tests.js`.
 
 ## Sources
 

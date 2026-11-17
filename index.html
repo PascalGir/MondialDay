@@ -193,7 +193,7 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 
   <footer>
     <p>Liste établie d’après les journées proclamées par les Nations Unies et ses agences, les institutions européennes, la France et la Suisse, complétée de journées populaires. Certaines dates, fixées chaque année par leurs organisateurs, peuvent varier : vérifiez auprès de l’organisme. Pour aller plus loin : <a href="https://www.un.org/fr/observances/list-days-weeks" target="_blank" rel="noopener">liste de l’ONU</a> · <a href="https://fr.wikipedia.org/wiki/Journ%C3%A9e_internationale" target="_blank" rel="noopener">Wikipédia</a>.</p>
-    <p><span id="piedNom">MondialDay</span> · version <span id="numVersion">1.1</span> · <button class="lien" id="btnNouv">nouveautés</button></p>
+    <p><span id="piedNom">MondialDay</span> · version <span id="numVersion"></span> · <button class="lien" id="btnNouv">nouveautés</button></p>
   </footer>
 </div>
 
@@ -223,10 +223,10 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 
 <div class="toast" id="toast" role="status"></div>
 
-<script src="config.js?v=1.1"></script>
-<script src="journees.js?v=1.1"></script>
+<script src="config.js?v=1.2"></script>
+<script src="journees.js?v=1.2"></script>
 <script src="journees-auto.js"></script>
-<script src="nouveautes.js?v=1.1"></script>
+<script src="nouveautes.js?v=1.2"></script>
 
 <!-- Moteur de dates et d'export .ics (sans accès à la page : réutilisé par outils/generer-ics.js) -->
 <script id="moteur">
@@ -334,12 +334,13 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 
   // Liste de base + données récupérées automatiquement (journees-auto.js) :
   // les corrections remplacent la date d'une journée de base, les ajouts viennent en plus.
-  function fusion(base, auto) {
+  function fusion(base, auto, exclues) {
+    var ex = (exclues || []).map(cle);
     if (!auto) return base.slice();
     var corr = auto.corrections || {};
     var liste = base.map(function (j) { var c = corr[cle(j[1])]; return c ? [c].concat(j.slice(1)) : j; });
     var vus = {}; liste.forEach(function (j) { vus[cle(j[1])] = 1; });
-    (auto.ajouts || []).forEach(function (j) { if (!vus[cle(j[1])]) { vus[cle(j[1])] = 1; liste.push(j); } });
+    (auto.ajouts || []).forEach(function (j) { if (!vus[cle(j[1])] && ex.indexOf(cle(j[1])) < 0) { vus[cle(j[1])] = 1; liste.push(j); } });
     return liste;
   }
 
@@ -351,8 +352,8 @@ dialog::backdrop{background:rgba(27,26,44,.55)}
 (function () {
   "use strict";
   var C = window.CONFIG, MD = window.MD, T = MD.TYPES, AUTO = window.JOURNEES_AUTO || null;
-  var J = MD.fusion(window.JOURNEES, AUTO);
-  var VERSION = "1.1";
+  var J = MD.fusion(window.JOURNEES, AUTO, C.journeesExclues);
+  var VERSION = C.version;
   var MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   var MOIS_C = ["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
   var ORDRE = ["M","I","E","FR","CH"];

@@ -1,5 +1,15 @@
 # Changelog — MondialDay
 
+## 1.2 — 2026-11-17 — Lecture fiable de Wikipédia, tests, version unique
+
+- Cause de l'échec du 13.11 (1 journée reconnue) : les dates de la page sont des modèles à un paramètre (`{{date|1 janvier}}`), effacés par le nettoyage ; et les références `<ref name="calendrier" />` étaient prises pour des références ouvrantes, ce qui supprimait des blocs entiers de la page.
+- `outils/mise-a-jour.js` : modèles `{{date|…}}` (un ou plusieurs paramètres), `{{1er|samedi}}` / `{{2e|lundi}} de février` / `{{3e|week-end}}` ; plages « 6 / 8 février » ; « 28 ou 29 février » → dernier jour du mois ; « À partir du » ; « Dernier samedi (du mois) » ; sous-listes `**` rattachées à la date de la ligne parente ; arrêt aux sections Notes / Voir aussi ; noms : parenthèses, « ou … », suite de phrase après une virgule et « instaurée / créée … » retirées, un nom doit commencer par Journée, Jour, Semaine ou Fête.
+- Comparaison : correction de date seulement si le nom est identique ; doublon si même jour et moitié des mots en commun ou un nom contenu dans l'autre, ou même mois et ≥ 0,75 ; mots proches tolérés (Novruz / Nowrouz). Liste des ajouts et corrections écrite dans le journal de l'automatisation ; début de la page écrit en cas de contenu inattendu.
+- `config.journeesExclues` : journées de la source à ne jamais ajouter (appliqué par la mise à jour, la page et les .ics).
+- `outils/tests.js` (EV-03) : calcul des dates, données du site, lecture d'une copie de la vraie page (`outils/tests/wikipedia-journee-internationale.txt`, relevée le 17.11.2026), doublons, idempotence, exclusions, récupération réussie / source illisible / injoignable sur une copie du site, cohérence du numéro de version. Lancé par l'automatisation avant toute écriture.
+- Version unique (EV-04) : `config.version` ; la page l'affiche ; `node outils/version.js` la reporte dans les paramètres anti-cache et `sw.js` ; les tests refusent toute incohérence.
+- Essai sur la page réelle : 211 journées lues sur 12 mois, 148 déjà connues, 63 nouvelles, 0 date déplacée.
+
 ## 1.1 — 2026-11-13 — Prochains jours, accordéon par mois, mise à jour mensuelle
 
 - Bandeau en haut de page : « Dernière récupération des informations », lu dans `journees-auto.js` (`derniereRecuperation`, date de la dernière récupération réussie uniquement). Sans récupération : mention « aucune pour l’instant » + date de la liste initiale (`config.dateListeInitiale`) + date de la prochaine récupération prévue.

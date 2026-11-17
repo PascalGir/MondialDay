@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Vérifier le site et la lecture de la source (tests)
+        run: node outils/tests.js
+
       - name: Récupérer et fusionner les journées
         id: maj
         continue-on-error: true
